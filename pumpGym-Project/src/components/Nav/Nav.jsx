@@ -1,10 +1,25 @@
 import React from 'react'
+import {Link}  from "react-router-dom"
+import * as styles from "./styles"
 
 const Nav = () => {
   return (
-    <nav>
+    <styles.NavContainer>
+
+      <styles.Logo>
+        <span>P</span>  UM <span>P</span>
+        </styles.Logo>
+
+      <styles.NavItens>
+        <Link to={'/'}>Sobre Nós</Link>
+        <Link to={'/unidades'}>Unidades</Link>
+        <Link to={'/modalidades'}>Modalidades</Link>
+        <Link to={'/aluno'}>Ârea do Aluno</Link>
+        <Link to={'/contato'}>Fale Conosco</Link>
+        <Link to={'/matricula'}><span>Matricule-se</span></Link>
+      </styles.NavItens>
       
-    </nav>
+    </styles.NavContainer>
   )
 }
 

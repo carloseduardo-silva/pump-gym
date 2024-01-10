@@ -1,11 +1,24 @@
 import React from 'react'
+import Nav from '../../components/Nav/Nav'
 
-const home = () => {
+import * as styles from "./styles"
+import Unidades from '../../components/Unidades/Unidades'
+
+const Home = () => {
   return (
-    <div>
+    <>
+    <Nav></Nav>
+
+    <styles.advertisementContainer>
+      <p>WELCOME TO PUMP GYM</p>
+      <h1> Chegou o momento de dar um <span>PUMP</span> na sua vida.</h1>
+     
+    </styles.advertisementContainer>
+
+    <Unidades></Unidades>
       
-    </div>
+    </>
   )
 }
 
-export default home
+export default Home
