@@ -8,11 +8,13 @@ justify-content:center;
 background-color:rgb(20,20,20);
 width: 100%;
 height: 90vh;
+text-align:center;
 
 
 h1{
     color:white;
     padding-bottom:3rem;
+    margin:0px 1.25rem;
 
 
 }
@@ -26,5 +28,17 @@ p{
 
 span{
     color:red;
+}
+
+@media (max-width: 768px){
+ p{
+    font-size:14px;
+    
+
+}
+h1{
+    font-size: 30px;
+}
+
 }
 `

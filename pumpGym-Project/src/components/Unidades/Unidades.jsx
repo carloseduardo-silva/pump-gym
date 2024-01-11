@@ -1,11 +1,12 @@
 import React from 'react'
 import * as styles from "./styles"
+import {Link} from "react-router-dom"
 
 const Unidades = () => {
   return (
     <styles.unidadesContainer>
 
-        <styles.title> <h1> Conheça a unidade mais perto da sua casa</h1></styles.title>
+        <styles.title> <h1> CONHEÇA A UNIDADE MAIS PERTO DA SUA CASA</h1></styles.title>
 
         <styles.cardUnityContainer> 
             <styles.cardUnities> 
@@ -40,6 +41,10 @@ const Unidades = () => {
             </styles.cardUnities>
            
         </styles.cardUnityContainer>
+
+        <Link to={'/modalidades'}>
+         CONHEÇA TODAS AS UNIDADES
+        </Link>
       
     </styles.unidadesContainer>
   )
