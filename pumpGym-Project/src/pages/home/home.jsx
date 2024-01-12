@@ -14,7 +14,8 @@ const Home = () => {
     <styles.advertisementContainer>
       <p>WELCOME TO PUMP GYM</p>
       <h1> Chegou o momento de dar um <span>PUMP</span> na sua vida.</h1>
-     
+      <styles.mobileTitle>Matricule-se já</styles.mobileTitle>
+      
     </styles.advertisementContainer>
     
     <Unidades></Unidades>

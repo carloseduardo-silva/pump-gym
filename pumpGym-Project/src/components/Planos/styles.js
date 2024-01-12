@@ -18,12 +18,13 @@ background-color:rgb(240,240,240);
 
 `
 
-export const planosContainer = styled.div`
+export const contatoContainer = styled.div`
 display:flex;
 flex-direction: column;
 align-items: center;
 justify-content:center;
-background-image: url(https://i.pinimg.com/550x/5c/5b/2f/5c5b2f89f2939fda5802636663ba1cd4.jpg);
+text-align:center;
+background-color: rgb(252, 32, 32);
 width:500px;
 height: 500px;
 
@@ -32,7 +33,7 @@ height: 500px;
 a{
     text-decoration:none;
     padding:1rem;
-    background-color:red;
+    background-color:rgb(252, 32, 32);
     color:white;
     border-bottom-right-radius: 16px;
     border-top-left-radius: 16px;
@@ -42,24 +43,57 @@ a{
 
 h1{
 
-    z-index:3;
+    margin: 3.5rem 0rem 1rem 0rem;
+}
+
+@media (max-width: 600px){
+    width:80%;
+
+
+    h1{
+        margin: 1rem;
+        font-size: 1.75rem;
+    }
+
+    a{
+        font-size: 1.25rem;
+    }
 }
 
 
 
 
 `
-export const contatoContainer = styled.div`
+export const planosContainer = styled.div`
 display:flex;
 flex-direction: column;
 align-items: center;
 justify-content:center;
-background-image: url(https://i.pinimg.com/550x/5c/5b/2f/5c5b2f89f2939fda5802636663ba1cd4.jpg);
-
+background-image: url(${(props) => props.IMG});
+text-align:center;
 width:500px;
 height: 500px;
 
+p{
+    font-weight:bolder;
+    margin:0.5rem;
+}
 
+@media (max-width: 600px){
+    width:80%;
+
+    h1{
+        margin: 0rem 1rem;
+        font-size: 1.75rem;
+    }
+
+    p{
+        font-size: 1rem;
+        
+    }
+
+    
+}
 
 
 

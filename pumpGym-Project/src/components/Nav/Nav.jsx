@@ -12,15 +12,14 @@ const Nav = () => {
       
 
       <styles.Logo>
-      <styles.menuHamburguer> 
-        <span class="material-symbols-outlined" onClick={() => {setisVisible(true)}}>menu</span>
-      </styles.menuHamburguer>  
+       
 
         <span>P</span>  UM <span>P</span>
         </styles.Logo>
 
 
       <styles.NavItens>
+        
         <Link to={'/'}>Sobre Nós</Link>
         <Link to={'/unidades'}>Unidades</Link>
         <Link to={'/modalidades'}>Modalidades</Link>
@@ -35,8 +34,10 @@ const Nav = () => {
       <span class="material-symbols-outlined" onClick={() => {setisVisible(false)}}>close</span>
       </styles.navModal>
 
-      <styles.mobileNavTitle> Matricule-se já</styles.mobileNavTitle>
-      
+      <styles.menuHamburguer> 
+          <span class="material-symbols-outlined" onClick={() => {setisVisible(true)}}>menu</span>
+        </styles.menuHamburguer> 
+     
     </styles.NavContainer>
   )
 }

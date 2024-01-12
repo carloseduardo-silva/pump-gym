@@ -6,20 +6,27 @@ display:flex;
 flex-direction: row;
 align-items:center;
 justify-content: space-between;
-padding: 2.5em 2em;
+padding: 2.5em 0em;
+position: fixed;
+background-color: white;
+width:100%;
+border-bottom: 0.75px solid black;
+box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.5);
+z-index:10;
 `
 
 export const Logo = styled.div `
 display:flex;
 font-size:2rem;
 align-items:center;
+margin-left:1.5rem;
 
 &:hover{
     cursor:pointer;
 }
 
 span {
-    color:red;
+    color:rgb(252, 32, 32);
 }
 `
 
@@ -31,6 +38,7 @@ align-items: center;
 justify-content: space-around;
 gap: 2em;
 font-size:1.2rem;
+margin-right:1.5rem;
 
 
 
@@ -48,8 +56,7 @@ a:hover{
 
 span{
     color:white;
-    background-color:red;
-    border:1px solid black;
+    background-color:rgb(252, 32, 32);
     padding:0.75em;
     border-radius: 30px;
 }
@@ -95,7 +102,7 @@ const slideFromRight = keyframes`
 export const navModal = styled.div`
     display: ${(props) => (props.isVisible) ? "flex" :" none" };
     background-color:white;
-    color: red;
+    color: rgb(252, 32, 32);
     justify-content: start;
     align-items: center;
     flex-direction: column;
@@ -135,24 +142,4 @@ export const navModal = styled.div`
 
 `
 
-export const mobileNavTitle = styled.h3`
-    display:none;
-    opacity:0;
-    color:white;
-    background-color:red;
-    border:1px solid black;
-    padding:0.75em;
-    border-radius: 30px;
 
-    &:hover{
-        cursor:pointer;
-        transition:250ms;
-        transform: scale(1.1);
-
-    }
-
-    @media (max-width:1000px){
-        display:flex;
-        opacity:1;
-    }
-`

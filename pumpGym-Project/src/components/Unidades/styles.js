@@ -10,7 +10,7 @@ padding:4em 2em;
 a{
     text-decoration:none;
     padding:1rem;
-    background-color:red;
+    background-color:rgb(252, 32, 32);
     color:white;
     border-bottom-right-radius: 16px;
     border-top-left-radius: 16px;
@@ -52,6 +52,10 @@ padding:1rem 0rem 6rem 0rem;
 @media (min-width:1350px){
     gap: 5em;
     max-width:1100px
+}
+
+@media (max-width: 1000px){
+    gap:3rem;
 }
 
 

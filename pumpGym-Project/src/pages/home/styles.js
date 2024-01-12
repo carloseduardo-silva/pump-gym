@@ -7,13 +7,13 @@ align-items:center;
 justify-content:center;
 background-color:rgb(20,20,20);
 width: 100%;
-height: 90vh;
+height: 99vh;
 text-align:center;
 
 
 h1{
     color:white;
-    padding-bottom:3rem;
+   
     margin:0px 1.25rem;
 
 
@@ -22,8 +22,8 @@ h1{
 p{
     color:white;
     margin-bottom:10px;
-    
     letter-spacing: 5px;
+    padding-top:4rem;
 }
 
 span{
@@ -39,6 +39,38 @@ span{
 h1{
     font-size: 30px;
 }
-
 }
+
+
+@media (max-width: 1000px){
+    p{
+       display:none;
+       opacity:0;
+    }
+    h1{
+        margin-top: 5rem;
+    }
+}
+`
+export const mobileTitle = styled.h3`
+    display:none;
+    opacity:0;
+    color:white;
+    background-color:red;
+    border:1px solid black;
+    padding:0.75em;
+    border-radius: 30px;
+    margin-top:1rem;
+
+    &:hover{
+        cursor:pointer;
+        transition:250ms;
+        transform: scale(1.1);
+
+    }
+
+    @media (max-width:1000px){
+        display:flex;
+        opacity:1;
+    }
 `
