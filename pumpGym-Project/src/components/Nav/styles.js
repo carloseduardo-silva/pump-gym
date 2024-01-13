@@ -6,27 +6,38 @@ display:flex;
 flex-direction: row;
 align-items:center;
 justify-content: space-between;
-padding: 2.5em 0em;
+padding: 0.6em 0em;
 position: fixed;
 background-color: white;
 width:100%;
 border-bottom: 0.75px solid black;
 box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.5);
 z-index:10;
+font-family: 'Nunito', sans-serif;
+
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
 `
 
 export const Logo = styled.div `
 display:flex;
-font-size:2rem;
+font-size:4rem;
 align-items:center;
 margin-left:1.5rem;
+font-family: "Teko";
+font-weight: bolder;
+padding-top: 10px;
 
 &:hover{
     cursor:pointer;
 }
 
 span {
-    color:rgb(252, 32, 32);
+    color:rgb(240, 10, 10);
 }
 `
 
@@ -56,7 +67,7 @@ a:hover{
 
 span{
     color:white;
-    background-color:rgb(252, 32, 32);
+    background-color:rgb(240, 10, 10);
     padding:0.75em;
     border-radius: 30px;
 }
@@ -102,7 +113,7 @@ const slideFromRight = keyframes`
 export const navModal = styled.div`
     display: ${(props) => (props.isVisible) ? "flex" :" none" };
     background-color:white;
-    color: rgb(252, 32, 32);
+    color: rgb(240, 10, 10);
     justify-content: start;
     align-items: center;
     flex-direction: column;

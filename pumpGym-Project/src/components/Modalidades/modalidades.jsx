@@ -53,6 +53,7 @@ const Modalidades = () => {
       
         </styles.cardContainer>
 
+        <Link> VER MAIS +</Link>
       </styles.modalidadesContainer>
     </>
   )

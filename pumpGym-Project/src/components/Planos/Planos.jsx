@@ -5,23 +5,28 @@ import { useState } from 'react'
 
 const Planos = () => {
 
-  const [contatoIMG, setcontatoIMG] = useState('../../../public/workoutIMGblack.png')
+  const [contatoIMG, setcontatoIMG] = useState('../../../public/contatoContainer.png')
 
   return (
 
     <styles.divContainer>
       
-      <styles.planosContainer >
-     
-        <h1>ENTRE EM CONTATO</h1>
-        <Link to={'/contato'}>Contato</Link>
-      </styles.planosContainer>
+      <Link to={'/contato'}>
+        <styles.contatoContainer IMG={contatoIMG}>
+          <h1>ENTRE EM CONTATO</h1>
+          <Link to={'/contato'}>Contato</Link>
+        </styles.contatoContainer>
+      </Link>
 
-      <styles.contatoContainer IMG={contatoIMG}>
-   
+
+      <Link to={'/matrícula'}>
+        <styles.planosContainer >
         <h1>VEJA OS NOSSOS PLANOS</h1>
-        <p>Começe a treinar por apenas R$10.00</p>
-      </styles.contatoContainer>
+          <p> Planos a partir de apenas  R$97.00 por mês</p>
+        </styles.planosContainer>
+      </Link>
+
+      
 
     </styles.divContainer>
   )

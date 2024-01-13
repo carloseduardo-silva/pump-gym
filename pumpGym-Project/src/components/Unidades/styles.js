@@ -5,16 +5,17 @@ export const unidadesContainer = styled.div`
 display:flex;
 flex-direction: column;
 align-items:center;
-padding:4em 2em;
+padding:4em 2em 6em 2em;
 
 a{
     text-decoration:none;
-    padding:1rem;
-    background-color:rgb(252, 32, 32);
+    padding:1rem 1.75rem;
+    background-color:rgb(240, 10, 10);
     color:white;
     border-bottom-right-radius: 16px;
     border-top-left-radius: 16px;
-    font-size:1.5rem;
+    font-size:2rem;
+    font-family: 'Teko', sans-serif;
 
 }
 
@@ -25,7 +26,7 @@ a:hover{
 
 @media (max-width: 600px){
     a{
-        font-size:1.25rem;
+        font-size:1.55rem;
     }
 }
 `
@@ -34,7 +35,29 @@ export const title = styled.div`
 display:flex;
 align-items:center;
 text-align:center;
-margin:2em 1em;
+margin:2em 3em;
+max-width:900px;
+
+
+h1{
+    font-family: 'Teko', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+ 
+}
+
+span{
+    color: rgb(240, 10, 10);
+}
+
+@media (max-width: 600px){
+
+    margin: 2rem 0rem;
+    h1{
+        font-size: 3.25rem;
+        margin: 1rem 0rem;
+    }
+}
 
 
 `
@@ -47,6 +70,8 @@ align-items:center;
 justify-content:center;
 gap:1em;
 padding:1rem 0rem 6rem 0rem;
+font-family: 'Nunito', sans-serif;
+
 
 
 @media (min-width:1350px){

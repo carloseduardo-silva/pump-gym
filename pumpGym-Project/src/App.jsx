@@ -4,7 +4,12 @@ import './App.css'
 
 
 //pages
-import Home from './pages/home/home'
+import Home from './pages/home/Home'
+import Unidades from './pages/unidades/Unidades'
+import Modalidades from './pages/modalidades/Modalidades'
+import Contato from './pages/contato/Contato'
+import Aluno from './pages/area-do-aluno/Aluno'
+import Matricula from './pages/matricula/Matricula'
 
 
 function App() {
@@ -15,10 +20,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
-
-
-
-
+        <Route path='/unidades' element={<Unidades/>}> </Route>
+        <Route path='/modalidades' element={<Modalidades/>}> </Route>
+        <Route path='/contato' element={<Contato/>}> </Route>
+        <Route path='/aluno' element={<Aluno/>}> </Route>
+        <Route path='/matricula' element={<Matricula/>}> </Route>
 
       </Routes>
     </BrowserRouter>

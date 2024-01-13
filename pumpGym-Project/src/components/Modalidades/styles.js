@@ -19,13 +19,39 @@ import styled, {keyframes} from "styled-components"
 export const modalidadesContainer = styled.div`
 display:flex;
 flex-direction:column;
-padding:2rem 1rem 6rem 1rem;
+padding:1rem 1rem 3.5rem 1rem;
 justify-content:center;
 text-align:center;
+background-color: rgb(240, 240, 240);
 
 h1{
-    margin: 4rem 0rem;
+    margin: 3rem 0rem;
+    font-family: 'Teko', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
 }
+
+
+a{
+    
+    text-decoration:none;
+    padding:0.65rem 1.75rem;
+    background-color:rgb(240, 10, 10);
+    color:white;
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 16px;
+    font-size:2rem;
+    font-family: 'Teko', sans-serif;
+    width:160px;
+    margin: 2rem auto;
+
+}
+
+a:hover{
+    transform: scale(1.1);
+    transition:250ms;
+}
+
 `
 
 
@@ -35,14 +61,19 @@ display:flex;
 flex-direction:row;
 align-items:center;
 justify-content:space-around;
-gap:2rem;
 margin:1rem 0rem;
 
 a{
     text-decoration: none;
+    padding:2px;
+    border-radius:5px;
+    width:auto;
 }
 
+
+
 @media (max-width:1000px){
+    gap:2rem;
     flex-direction:column;
 }
 `
@@ -62,6 +93,9 @@ background-repeat: no-repeat;
 width:350px;
 height: 450px;
 z-index:3;
+box-shadow: 5px 5px 12px rgb(0, 0, 0, 0.5);
+font-family: 'Teko', sans-serif;
+
 
 
 
@@ -73,18 +107,19 @@ img{
 
 p{
     color:white;
-    font-size: 1.75rem;
-    margin:3rem 1.25rem;
+    font-size: 2.5rem;
+    margin:3rem 1.6rem;
     font-weight:bolder;
 }
 
 span{
     display:none;
     opacity:0;
-    margin: 1rem 1.25rem 3rem 1.25rem;
+    margin: 1rem 1.6rem 3rem 1.6rem;
     color: white;
     animation: ${Show} 700ms;
     font-weight:bolder;
+    font-size: 1.25rem;
 
 }
 
@@ -97,7 +132,7 @@ span{
    p{
     transform: scale(1.04);
     transition:250ms;
-    margin: 0rem 1.25rem;
+    margin: -0.5rem 1.6rem;
    }
 
    span{
@@ -106,6 +141,9 @@ span{
    }
 }
 
+@media (max-width:1150px){
+    width:300px;
+}
 
 @media (max-width: 1000px){
     width:80vw;
@@ -118,13 +156,9 @@ display:flex;
 opacity:0;
 width:350px;
 height:100%;
-margin-bottom: -7.75rem;
-background-color: rgba(248, 37, 37, 0.200);
+margin-bottom: -8.45rem;
+background-color:rgba(255, 0, 0, 0.200);
 z-index:4;
-
-@media (max-width: 1000px){
-    width:85%;
-}
 
 &:hover{
     transition:600ms;
@@ -133,6 +167,16 @@ z-index:4;
  
     
 }
+
+
+@media (max-width: 1000px){
+    width:85%;
+}
+
+@media (max-width:1150px){
+    width:300px;
+}
+
 
 @media (max-width: 1000px){
     width:80vw;

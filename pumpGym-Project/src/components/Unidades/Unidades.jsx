@@ -6,7 +6,12 @@ const Unidades = () => {
   return (
     <styles.unidadesContainer>
 
-        <styles.title> <h1> CONHEÇA A UNIDADE MAIS PERTO DA SUA CASA</h1></styles.title>
+        <styles.title> 
+         <h1> 
+            CONHEÇA A UNIDADE MAIS PERTO DA SUA CASA E FAÇA PARTE DO 
+            TEAM 
+             <span style={{marginLeft:'14px'}}>P</span>UM<span>P</span> </h1>
+            </styles.title>
 
         <styles.cardUnityContainer> 
             <styles.cardUnities> 

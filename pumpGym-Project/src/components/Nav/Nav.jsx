@@ -11,16 +11,16 @@ const Nav = () => {
 
       
 
-      <styles.Logo>
-       
-
-        <span>P</span>  UM <span>P</span>
+      <Link to={'/'}>
+        <styles.Logo>
+          <span>P</span>  UM <span>P</span>
         </styles.Logo>
+      </Link>
 
 
       <styles.NavItens>
         
-        <Link to={'/'}>Sobre Nós</Link>
+        
         <Link to={'/unidades'}>Unidades</Link>
         <Link to={'/modalidades'}>Modalidades</Link>
         <Link to={'/aluno'}>Ârea do Aluno</Link>

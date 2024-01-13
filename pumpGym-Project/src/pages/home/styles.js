@@ -5,14 +5,16 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
-background-color:rgb(20,20,20);
+background-color:rgb(240, 240, 240);
 width: 100%;
 height: 99vh;
 text-align:center;
+font-family: 'Nunito', sans-serif;
+
 
 
 h1{
-    color:white;
+    color:black;
    
     margin:0px 1.25rem;
 
@@ -20,7 +22,7 @@ h1{
 }
 
 p{
-    color:white;
+    color:black;
     margin-bottom:10px;
     letter-spacing: 5px;
     padding-top:4rem;

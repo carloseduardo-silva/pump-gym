@@ -5,11 +5,12 @@ import * as styles from "./styles"
 import Unidades from '../../components/Unidades/Unidades'
 import Modalidades from '../../components/Modalidades/modalidades'
 import Planos from '../../components/Planos/Planos'
+import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
   return (
     <>
-    <Nav></Nav>
+    <Nav/>
 
     <styles.advertisementContainer>
       <p>WELCOME TO PUMP GYM</p>
@@ -18,10 +19,12 @@ const Home = () => {
       
     </styles.advertisementContainer>
     
-    <Unidades></Unidades>
+    <Unidades/>
 
-    <Modalidades></Modalidades>
-    <Planos></Planos>
+    <Modalidades/>
+    <Planos/>
+
+    <Footer/>
       
     </>
   )
