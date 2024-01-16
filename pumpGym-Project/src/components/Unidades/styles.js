@@ -1,4 +1,20 @@
 import styled from "styled-components";
+import {keyframes} from "styled-components";
+
+
+const cardUnitiesEnter = keyframes`
+    0%{
+        opacity:0;
+        transform: translate(-50%, -10%);
+    }
+    100%{
+
+        opacity:1;
+        transform: translate(0%, 0%);
+
+    }
+
+`
 
 
 export const unidadesContainer = styled.div`
@@ -97,6 +113,9 @@ border-bottom-left-radius:15px ;
 border-bottom-right-radius:15px ;
 width: 260px;
 text-align: center;
+box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.3);
+animation: ${cardUnitiesEnter} 1s ;
+
 
 
 img{

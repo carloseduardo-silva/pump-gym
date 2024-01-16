@@ -5,7 +5,7 @@ import { Footer } from '../../components/Footer/style'
 const Contato = () => {
   return (
     <>
-       <Nav></Nav>
+       <Nav active={'contato'}></Nav>
       
       <Footer></Footer> 
       

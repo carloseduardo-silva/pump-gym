@@ -1,10 +1,37 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {Link}  from "react-router-dom"
 import * as styles from "./styles"
 
-const Nav = () => {
+const Nav = (active) => {
 
   const [isVisible, setisVisible] = useState(false)
+  const [alunoActive, setAlunoActive] = useState(false)
+  const [unidadesActive, setUnidadesActive] = useState(false)
+  const [modalidadesActive, setModalidadesActive] = useState(false)
+  const [contatoActive, setContatoActive] = useState(false)
+
+  console.log(active.active)
+
+ useEffect(() =>{
+  switch (active.active){
+    case 'aluno':
+       setAlunoActive(true)
+       break;
+
+    case 'contato':
+      setContatoActive(true)
+     break;
+
+    case 'modalidades':
+       setModalidadesActive(true)
+       break;
+
+    case 'unidades':
+      setUnidadesActive(true)
+       break;
+    
+  }
+ })
 
   return (
     <styles.NavContainer>
@@ -21,11 +48,15 @@ const Nav = () => {
       <styles.NavItens>
         
         
-        <Link to={'/unidades'}>Unidades</Link>
-        <Link to={'/modalidades'}>Modalidades</Link>
-        <Link to={'/aluno'}>Ârea do Aluno</Link>
-        <Link to={'/contato'}>Fale Conosco</Link>
-        <Link to={'/matricula'}><span>Matricule-se</span></Link>
+        {unidadesActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)', borderRadius:'4px'}} to={'/unidades'}> UNIDADES</Link> : <Link to={'/unidades'}>UNIDADES</Link> }
+
+        {modalidadesActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)', borderRadius:'4px'}} to={'/modalidades'}>MODALIDADES</Link> : <Link to={'/modalidades'}> MODALIDADES</Link> }
+        
+        {alunoActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)', borderRadius:'4px'}} to={'/aluno'}> ÂREA DO ALUNO</Link> : <Link to={'/aluno'}> ÂREA DO ALUNO</Link> }
+
+        {contatoActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)', borderRadius:'4px'}} to={'/contato'}> FALE CONOSCO</Link> : <Link to={'/contato'}> FALE CONOSCO</Link> }
+
+        <Link style={{borderBottom:'none'}} to={'/matricula'}><span>MATRICULE-SE</span></Link>
       </styles.NavItens>
       
      

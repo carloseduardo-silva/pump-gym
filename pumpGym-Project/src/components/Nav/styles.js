@@ -1,5 +1,18 @@
 import styled, {keyframes} from "styled-components"
 
+const slideFromRight = keyframes`
+0%{
+    opacity:0.8;
+    transform: translate(-100%, -50%);
+}
+100%{
+    opacity:1;
+    transform: translate(-50%, -50%);
+
+}`
+
+
+
 
 export const NavContainer = styled.nav`
 display:flex;
@@ -47,15 +60,23 @@ display:flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-around;
-gap: 2em;
-font-size:1.2rem;
+gap: 2.25em;
+font-size:1rem;
 margin-right:1.5rem;
 
 
+.active{
+    border-bottom: 2px solid rgb(240, 10, 10);
+    border-radius:4px;
+}
 
 a{
     text-decoration:none;
     color:black;
+    font-weight:bolder;
+    padding: 3px 0px;
+
+   
 }
 
 a:hover{
@@ -63,6 +84,8 @@ a:hover{
     cursor:pointer;
     transform: scale(1.1);
     transition:250ms;
+    border-bottom: 1px solid rgb(240, 10, 10);
+    border-radius: 4px;
 }
 
 span{
@@ -99,16 +122,6 @@ export const menuHamburguer = styled.div`
     }
 `
 
-const slideFromRight = keyframes`
-0%{
-    opacity:0.8;
-    transform: translate(-100%, -50%);
-}
-100%{
-    opacity:1;
-    transform: translate(-50%, -50%);
-
-}`
 
 export const navModal = styled.div`
     display: ${(props) => (props.isVisible) ? "flex" :" none" };

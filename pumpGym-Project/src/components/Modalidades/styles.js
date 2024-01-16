@@ -1,6 +1,20 @@
 import styled, {keyframes} from "styled-components"
 
 
+const divEnter = keyframes`
+
+0%{
+    opacity:0;
+    transform: translate(-50%, -10%);
+
+}
+100%{
+    opacity:1;
+    transform: translate(0%, 0%);
+}
+`
+
+
  const Show = keyframes`
 0%{
     opacity:0.8;
@@ -68,6 +82,7 @@ a{
     padding:2px;
     border-radius:5px;
     width:auto;
+    animation: ${divEnter} 1s;
 }
 
 

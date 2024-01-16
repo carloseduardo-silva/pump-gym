@@ -1,4 +1,18 @@
 import styled from "styled-components"
+import {keyframes} from "styled-components"
+
+const divEnter = keyframes`
+
+0%{
+    opacity:0;
+    transform: translate(0%, -20%);
+
+}
+100%{
+    opacity:1;
+    transform: translate(0%, 0%);
+}
+`
 
 export const divContainer = styled.div`
 display:flex;
@@ -11,6 +25,7 @@ gap:3rem;
 
 a{
     text-decoration: none;
+    animation: ${divEnter} 1s;
 }
 
 @media (max-width: 1000px){

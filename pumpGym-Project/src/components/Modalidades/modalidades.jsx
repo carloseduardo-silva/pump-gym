@@ -22,7 +22,7 @@ const Modalidades = () => {
 
         <styles.cardContainer>
 
-        <Link to={'/modalidades/musculação'}>
+        <Link  to={'/modalidades/musculação'}>
           <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
           
           <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
@@ -32,7 +32,7 @@ const Modalidades = () => {
           </styles.card>
         </Link>
 
-        <Link to={'/modalidades/crossTraining'}>
+        <Link style={{animationDelay: '200ms'}} to={'/modalidades/crossTraining'}>
           <styles.card onClick={() => setcardCrossShow(true)} IMG={crossTrainingIMG}>
   
           <styles.cardHoverModal isVisible={cardCrossShow}></styles.cardHoverModal>
@@ -42,7 +42,7 @@ const Modalidades = () => {
           </styles.card>
         </Link>
 
-        <Link to={'/modalidades/danças'}>
+        <Link style={{animationDelay: '400ms'}} to={'/modalidades/danças'}>
           <styles.card onClick={() => setcardDanceShow(true)} IMG={danceIMG}>
           <styles.cardHoverModal isVisible={cardDanceShow}></styles.cardHoverModal>
           <p>Danças</p>
