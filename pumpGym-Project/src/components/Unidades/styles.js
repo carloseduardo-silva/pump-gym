@@ -42,7 +42,8 @@ a:hover{
 
 @media (max-width: 600px){
     a{
-        font-size:1.55rem;
+        font-size:2rem;
+        padding: 1rem;
     }
 }
 `
@@ -70,7 +71,7 @@ span{
 
     margin: 2rem 0rem;
     h1{
-        font-size: 3.25rem;
+        font-size: 3rem;
         margin: 1rem 0rem;
     }
 }

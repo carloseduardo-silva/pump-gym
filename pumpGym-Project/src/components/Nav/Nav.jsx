@@ -10,7 +10,8 @@ const Nav = (active) => {
   const [modalidadesActive, setModalidadesActive] = useState(false)
   const [contatoActive, setContatoActive] = useState(false)
 
-  console.log(active.active)
+  
+
 
  useEffect(() =>{
   switch (active.active){
@@ -30,11 +31,17 @@ const Nav = (active) => {
       setUnidadesActive(true)
        break;
     
+
+      
   }
+
+  console.log(active.navSetting)
  })
 
+
+
   return (
-    <styles.NavContainer>
+    <styles.NavContainer navColor={active.navSetting}>
 
       
 
@@ -48,26 +55,47 @@ const Nav = (active) => {
       <styles.NavItens>
         
         
-        {unidadesActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)', borderRadius:'4px'}} to={'/unidades'}> UNIDADES</Link> : <Link to={'/unidades'}>UNIDADES</Link> }
+        {unidadesActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/unidades'}> UNIDADES</Link> : <Link to={'/unidades'}>UNIDADES</Link> }
 
-        {modalidadesActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)', borderRadius:'4px'}} to={'/modalidades'}>MODALIDADES</Link> : <Link to={'/modalidades'}> MODALIDADES</Link> }
+        {modalidadesActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/modalidades'}>MODALIDADES</Link> : <Link to={'/modalidades'}> MODALIDADES</Link> }
         
-        {alunoActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)', borderRadius:'4px'}} to={'/aluno'}> ÂREA DO ALUNO</Link> : <Link to={'/aluno'}> ÂREA DO ALUNO</Link> }
+        {alunoActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/aluno'}> ÂREA DO ALUNO</Link> : <Link to={'/aluno'}> ÂREA DO ALUNO</Link> }
 
-        {contatoActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)', borderRadius:'4px'}} to={'/contato'}> FALE CONOSCO</Link> : <Link to={'/contato'}> FALE CONOSCO</Link> }
+        {contatoActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/contato'}> FALE CONOSCO</Link> : <Link to={'/contato'}> FALE CONOSCO</Link> }
 
-        <Link style={{borderBottom:'none'}} to={'/matricula'}><span>MATRICULE-SE</span></Link>
+        <Link className='matricula' style={{borderBottom:'none', }} to={'/matricula'}><span>MATRICULE-SE</span></Link>
       </styles.NavItens>
       
      
       <styles.navModal isVisible={isVisible}>
 
-      <span class="material-symbols-outlined" onClick={() => {setisVisible(false)}}>close</span>
+        <header> 
+
+        <span class="material-symbols-outlined" onClick={() => {setisVisible(false)}}>close</span>
+
+        </header>
+
+        <styles.navModalItens>
+        
+        
+        {unidadesActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/unidades'}> UNIDADES</Link> : <Link to={'/unidades'}>UNIDADES</Link> }
+
+        {modalidadesActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/modalidades'}>MODALIDADES</Link> : <Link to={'/modalidades'}> MODALIDADES</Link> }
+        
+        {alunoActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/aluno'}> ÂREA DO ALUNO</Link> : <Link to={'/aluno'}> ÂREA DO ALUNO</Link> }
+
+        {contatoActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/contato'}> FALE CONOSCO</Link> : <Link to={'/contato'}> FALE CONOSCO</Link> }
+
+        <Link style={{borderBottom:'none'}} to={'/matricula'}><span>MATRICULE-SE</span></Link>
+        </styles.navModalItens>
+
+
+
       </styles.navModal>
 
       <styles.menuHamburguer> 
           <span class="material-symbols-outlined" onClick={() => {setisVisible(true)}}>menu</span>
-        </styles.menuHamburguer> 
+      </styles.menuHamburguer> 
      
     </styles.NavContainer>
   )

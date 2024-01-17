@@ -5,27 +5,31 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
-background-color:rgb(240, 240, 240);
+background-image: url('../../../public/contatoContainer.png');
+background-size: cover;
+background-repeat: no-repeat;
 width: 100%;
-height: 99vh;
+height: 100vh;
 text-align:center;
 font-family: 'Nunito', sans-serif;
 
 
 
 h1{
-    color:black;
-   
+    color:white;
     margin:0px 1.25rem;
+    font-family: 'Teko', sans-serif;
+    font-size: 3.5rem;
 
 
 }
 
 p{
-    color:black;
+    font-family: 'Teko', sans-serif;
+    color:white;
     margin-bottom:10px;
     letter-spacing: 5px;
-    padding-top:4rem;
+    font-size: 1.5rem;
 }
 
 span{
@@ -45,6 +49,9 @@ h1{
 
 
 @media (max-width: 1000px){
+
+    background-position: right right;
+
     p{
        display:none;
        opacity:0;

@@ -28,7 +28,7 @@ a{
     animation: ${divEnter} 1s;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1070px){
     flex-direction: column;
     gap:3rem;
 }
@@ -72,7 +72,7 @@ p{
 
 
 
-@media (max-width: 1000px){
+@media (max-width: 1070px){
     width:80vw;
 
     h1{
@@ -136,7 +136,7 @@ h1{
 
 
 
-@media (max-width: 1000px){
+@media (max-width: 1070px){
     width:80vw;
 
 
