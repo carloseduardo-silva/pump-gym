@@ -7,8 +7,8 @@ justify-content: center;
 gap:2.5rem;
 align-items: center;
 height: 100vh;
-padding: 1rem 2rem;
-
+padding: 2rem;
+background-color: #F9f6EE;
 
 
 @media (max-width: 600px){

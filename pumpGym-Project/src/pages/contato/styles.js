@@ -95,7 +95,9 @@ export const contato = styled.div`
     padding: 1rem 2.5rem;
     max-width:600px;
     height: 600px;
-    background-color: rgb(240, 240, 240);
+    background-color: white;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 5px;
 
 
 

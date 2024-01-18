@@ -7,7 +7,7 @@ import  Footer  from '../../components/Footer/Footer'
 const Aluno = () => {
   return (
     <>
-    <Nav active={'aluno'}></Nav>
+    <Nav active={'aluno'} navSetting={'white'} navPosition={'absolute'}></Nav>
     
     <styles.alunoContainer> 
     <styles.alunoCard> 

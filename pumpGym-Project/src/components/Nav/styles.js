@@ -43,19 +43,28 @@ flex-direction: row;
 align-items:center;
 justify-content: space-between;
 padding: 0.6em 0em;
-position: absolute;
-background-color: ${(props) => props.navColor };
+position:${(props) => props.navPosition};
+background-color:transparent;
 width:100%;
 z-index:10;
 font-family: 'Nunito', sans-serif;
 
 
+&.whiteNav{
+    
+    box-shadow: 0.5px 5px 12px rgb(0, 0, 0, 0.25);
+    background-color:white;
+    padding: 0.25em 0em;
+}
+
 
 a{
     text-decoration: none;
-    color:rgb(248, 248, 248);
+    color:${(props) => props.linkColor};
     
 }
+
+
 
 
 
@@ -103,7 +112,7 @@ margin-right:1.5rem;
 
 a{
     text-decoration:none;
-    color:white;
+    color:${(props) => props.linkColor};
     font-weight:bolder;
    
 }
@@ -149,7 +158,7 @@ export const menuHamburguer = styled.div`
 
     span{
         font-size:2rem;
-        color:white;
+        color:${(props) => props.linkColor};
     }
 
     span:hover{

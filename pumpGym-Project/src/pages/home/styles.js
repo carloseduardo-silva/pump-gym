@@ -8,6 +8,7 @@ justify-content:center;
 background-image: url('../../../public/contatoContainer.png');
 background-size: cover;
 background-repeat: no-repeat;
+box-shadow: inset 40px 80px 3rem rgba(0, 0, 0, 0.725);
 width: 100%;
 height: 100vh;
 text-align:center;

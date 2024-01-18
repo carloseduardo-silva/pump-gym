@@ -47,6 +47,38 @@ a:hover{
 }
 `
 
+export const unidadesHeader = styled.div`
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+background-image: url('../../../public/fundoUnidades.png');
+background-size: cover;
+background-repeat: no-repeat;
+box-shadow: inset 40px 80px 3rem rgba(0, 0, 0, 0.725);
+width: 100%;
+height: 100vh;
+font-family: 'Teko', sans-serif;
+
+
+h1{
+    color:white;
+    padding: 1rem 3.5rem;
+    background-color: rgb(5, 5, 5, 0.3);
+    border-radius: 30px;
+    border: 1px solid rgb(240, 10, 10);
+    font-size:4.25rem;
+
+}
+
+h1:hover{
+    border: 1px solid white;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+`
+
 export const title = styled.div`
 display:flex;
 align-items:center;
@@ -115,6 +147,7 @@ width: 260px;
 text-align: center;
 box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.3);
 animation: ${cardUnitiesEnter} 1s ;
+padding-bottom: 1.2rem;
 
 
 
@@ -127,6 +160,20 @@ p{
     font-size: 1.5rem;
     padding: 1.5em 0em;
 }
+
+a{
+    text-decoration:none;
+    padding:0.2rem 0.55rem;
+    background-color:rgb(240, 10, 10);
+    color:white;
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 16px;
+    font-size:1.65rem;
+    font-family: 'Teko', sans-serif;
+    width:160px;
+    
+}
+
 
 @media (max-width: 650px){
     width:90%;

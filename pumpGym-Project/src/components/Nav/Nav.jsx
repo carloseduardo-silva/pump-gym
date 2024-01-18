@@ -9,8 +9,8 @@ const Nav = (active) => {
   const [unidadesActive, setUnidadesActive] = useState(false)
   const [modalidadesActive, setModalidadesActive] = useState(false)
   const [contatoActive, setContatoActive] = useState(false)
-
-  
+  const [linkColor, setlinkColor] = useState('white')
+  const [NavPosition, setNavPosition] = useState('absolute')
 
 
  useEffect(() =>{
@@ -33,15 +33,44 @@ const Nav = (active) => {
     
 
       
-  }
+  }})
 
-  console.log(active.navSetting)
- })
+  useEffect(() =>{
+    const nav = document.querySelector('div nav')
+    switch (active.navSetting){
+      case 'white':
+         setlinkColor('black')
+         setNavPosition('fixed')
+         nav.classList.add('whiteNav')
+         break;
+  
+      case 'transparent':
+        setlinkColor('white')
+        setNavPosition('absolute')
+        nav.classList.remove('whiteNav')
+       break;
+      
+      }})
+
+  useEffect(() =>{
+    
+    switch (active.navPosition){
+      case 'fixed':
+          setNavPosition('fixed')
+          break;
+  
+      case 'absolute':
+        setNavPosition('absolute')
+        break;
+      
+      
+      }})
+
 
 
 
   return (
-    <styles.NavContainer navColor={active.navSetting}>
+    <styles.NavContainer className='' navPosition={NavPosition} linkColor={linkColor}>
 
       
 
@@ -52,7 +81,7 @@ const Nav = (active) => {
       </Link>
 
 
-      <styles.NavItens>
+      <styles.NavItens linkColor={linkColor}>
         
         
         {unidadesActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/unidades'}> UNIDADES</Link> : <Link to={'/unidades'}>UNIDADES</Link> }
@@ -93,7 +122,7 @@ const Nav = (active) => {
 
       </styles.navModal>
 
-      <styles.menuHamburguer> 
+      <styles.menuHamburguer  linkColor={linkColor}> 
           <span class="material-symbols-outlined" onClick={() => {setisVisible(true)}}>menu</span>
       </styles.menuHamburguer> 
      

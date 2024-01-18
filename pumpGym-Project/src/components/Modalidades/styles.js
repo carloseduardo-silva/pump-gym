@@ -78,11 +78,18 @@ justify-content:space-around;
 margin:1rem 0rem;
 
 a{
+    background-color:white;
     text-decoration: none;
     padding:2px;
     border-radius:5px;
     width:auto;
     animation: ${divEnter} 1s;
+}
+
+a:hover{
+    transform: scale(1.01);
+    transition: 200ms;
+
 }
 
 

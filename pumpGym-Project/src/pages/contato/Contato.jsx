@@ -17,15 +17,28 @@ const Contato = () => {
   const [inputCPF, setinputCPF] = useState()
   const [inputUnidade , setinputUnidade ] = useState()
   const [inputAssunto , setinputAssunto ] = useState()
+  const [inputSolicitação , setinputSolicitação ] = useState()
 
   const handleForm = (e) =>{
     e.preventDefault()
 
+    const solicitaçãoInfo = {
+      name: inputName,
+      email: inputEmail,
+      cpf: inputCPF,
+      unidade: inputUnidade,
+      assunto: inputAssunto,
+      solicitacao: inputSolicitação
+    }
+
+   
+    console.log(solicitaçãoInfo)
+    window.alert('SOLICITAÇÃO ENVIADA!')
   }
 
   return (
     <>
-       <Nav active={'contato'}></Nav>
+       <Nav active={'contato'} navSetting={'white'} navPosition={'absolute'}></Nav>
 
        <styles.contatoContainer>
 
@@ -34,12 +47,12 @@ const Contato = () => {
 
           <label>
             <span>Nome do solicitante*</span>
-            <input value={inputName} onChange={(e) => setinputName(e.target.value)} type="text"  name='nome'/>
+            <input required value={inputName} onChange={(e) => setinputName(e.target.value)} type="text"  name='nome'/>
           </label>
 
           <label>
             <span>E-mail do solicitante*</span>
-            <input  value={inputEmail} onChange={(e) => setinputEmail(e.target.value)} type="email"  name='email'/>
+            <input required  value={inputEmail} onChange={(e) => setinputEmail(e.target.value)} type="email"  name='email'/>
           </label>
 
           <label>
@@ -53,13 +66,13 @@ const Contato = () => {
           </label>
 
           <label>
-            <span>Assunto</span>
-            <input  value={inputAssunto} onChange={(e) => setinputAssunto(e.target.value)} type="text"  name='assunto'/>
+            <span>Assunto*</span>
+            <input  required value={inputAssunto} onChange={(e) => setinputAssunto(e.target.value)} type="text"  name='assunto'/>
           </label>
 
           <label>
             <span>Escreva sua solicitaçao*</span>
-            <textarea name="solicitaçao" cols="30" rows="10"></textarea>
+            <textarea  value={inputSolicitação} onChange={(e) => setinputSolicitação(e.target.value)} required name="solicitaçao" cols="30" rows="10"></textarea>
             
           </label>
 

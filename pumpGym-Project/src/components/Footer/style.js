@@ -6,7 +6,6 @@ flex-direction: column;
 align-items:center;
 justify-content:center;
 padding:1.5em 4em;
-background-color: rgb(240,240, 240);
 font-family: 'Nunito', 'Sans-serif';
 font-size: 1.5rem;
 color: black;

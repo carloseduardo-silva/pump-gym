@@ -50,7 +50,7 @@ a{
     
     text-decoration:none;
     padding:0.65rem 1.75rem;
-    background-color:rgb(240, 10, 10);
+    background-color:white;
     color:white;
     border-bottom-right-radius: 16px;
     border-top-left-radius: 16px;
@@ -67,7 +67,36 @@ a:hover{
 }
 
 `
+export const modalidadesHeader = styled.div`
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+background-image: url('../../../public/fundoModalidades.png');
+background-size: cover;
+background-repeat: no-repeat;
+box-shadow: inset 40px 80px 3rem rgba(0, 0, 0, 0.725);
+width: 100%;
+height: 100vh;
+font-family: 'Teko', sans-serif;
 
+h1{
+    color:white;
+    padding: 1rem 3.5rem;
+    background-color: rgb(5, 5, 5, 0.2);
+    border-radius: 30px;
+    border: 1px solid rgb(240, 10, 10);
+    font-size:4.25rem;
+
+}
+
+h1:hover{
+    border: 1px solid white;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+`
 
 
 export const cardContainer = styled.div`
