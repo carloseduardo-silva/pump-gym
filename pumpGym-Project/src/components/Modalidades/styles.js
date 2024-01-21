@@ -30,13 +30,16 @@ const divEnter = keyframes`
 
 
 
-export const modalidadesContainer = styled.div`
+export const modalidadesContainer = styled.section`
 display:flex;
 flex-direction:column;
 padding:1rem 1rem 3.5rem 1rem;
 justify-content:center;
 text-align:center;
 background-color: rgb(240, 240, 240);
+
+
+
 
 h1{
     margin: 3rem 0rem;
@@ -71,11 +74,15 @@ a:hover{
 
 
 export const cardContainer = styled.div`
-display:flex;
+display:none;
 flex-direction:row;
 align-items:center;
 justify-content:space-around;
 margin:1rem 0rem;
+
+&.show{
+    display: flex;
+}
 
 a{
     background-color:white;

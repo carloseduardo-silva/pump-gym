@@ -27,21 +27,42 @@ const ModalidadesPage = () => {
   const [cardCrossShow, setcardCrossShow] = useState(false)
   const [cardDanceShow, setcardDanceShow] = useState(false)
   const [slidesView, setslidesView] = useState(1)
+  const [slidesResize, setslidesResize] = useState(1)
+
+ 
+
+
+    useEffect(() =>{
+      let observer = new IntersectionObserver((entries) =>{
+       
+        if(entries[0].target.clientWidth > 1000){
+          setslidesView(3)
+        }else{
+          setslidesView(1)
+        }
+      })
+
+    observer.observe(document.querySelector('div'))
+
+  },[slidesResize])
 
   useEffect(() =>{
+    
 
-    let observer = new IntersectionObserver((entries) =>{
-    console.log(entries[0].target.clientWidth)
+    let cardContainerObserver = new IntersectionObserver((entries) =>{
+      
+      if(entries[0].isIntersecting){
+      
+        setslidesResize(slidesResize+1)
+      }else{
+        setslidesResize(slidesResize-1)
+      }})
 
-    if(entries[0].target.clientWidth > 1000){
-      setslidesView(3)
-    }else{
-      setslidesView(1)
-    }
+    
+    cardContainerObserver.observe(document.querySelector('div .cardContainer'))
   })
-  
-  observer.observe(document.querySelector('div'))
-})
+
+
 
 
   return (
@@ -52,11 +73,11 @@ const ModalidadesPage = () => {
         <h1> MODALIDADES </h1>
       </styles.modalidadesHeader>
 
-      <styles.modalidadesContainer>
+      <styles.modalidadesContainer className='cardContainer'>
     
-        
+         <h1> CONHEÇA AS NOSSAS MODALIDADES PRESENTES NA ACADEMIA </h1>
 
-        <styles.cardContainer>
+        <styles.cardContainer >
 
         <Swiper
           slidesPerView={slidesView}
@@ -137,7 +158,7 @@ const ModalidadesPage = () => {
           </styles.card></Link></SwiperSlide>
         </Swiper>
   
-      </styles.cardContainer>
+        </styles.cardContainer>
 
       </styles.modalidadesContainer>
       

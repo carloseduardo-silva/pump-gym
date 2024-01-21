@@ -33,7 +33,7 @@ const divEnter = keyframes`
 export const modalidadesContainer = styled.div`
 display:flex;
 flex-direction:column;
-padding:9rem 1rem 3.5rem 1rem;
+padding:5rem 1rem;
 justify-content:center;
 text-align:center;
 
@@ -62,8 +62,15 @@ a{
 }
 
 a:hover{
-    transform: scale(1.1);
-    transition:250ms;
+    transform: scale(1.02);
+    transition:350ms;
+}
+
+
+@media (max-width: 600px) {
+    h1{
+        font-size:3.2rem;
+    }
 }
 
 `
@@ -94,6 +101,18 @@ h1:hover{
     border: 1px solid white;
     transition: 250ms;
     cursor: pointer;
+}
+
+@media (max-width:600px){
+    h1{
+        font-size:3.25rem;
+    }
+}
+
+@media (max-width:430px){
+    h1{
+        font-size:2.25rem;
+    }
 }
 
 `

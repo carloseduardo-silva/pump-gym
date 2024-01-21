@@ -77,6 +77,18 @@ h1:hover{
     cursor: pointer;
 }
 
+@media (max-width:600px){
+    h1{
+        font-size:3.25rem;
+    }
+}
+
+@media (max-width:430px){
+    h1{
+        font-size:2.25rem;
+    }
+}
+
 `
 
 export const title = styled.div`

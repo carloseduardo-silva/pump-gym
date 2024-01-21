@@ -17,11 +17,13 @@ const cardUnitiesEnter = keyframes`
 `
 
 
-export const unidadesContainer = styled.div`
+export const unidadesContainer = styled.section`
 display:flex;
 flex-direction: column;
 align-items:center;
 padding:4em 2em 6em 2em;
+
+
 
 a{
     text-decoration:none;
@@ -79,7 +81,7 @@ span{
 
 `
 export const cardUnityContainer = styled.div`
-display:flex;
+display:none;
 flex-direction: row;
 flex-wrap: wrap;
 max-width: 900px;
@@ -89,7 +91,10 @@ gap:1em;
 padding:1rem 0rem 6rem 0rem;
 font-family: 'Nunito', sans-serif;
 
-
+&.show{
+    display:flex;
+    
+}
 
 @media (min-width:1350px){
     gap: 5em;

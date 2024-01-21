@@ -23,14 +23,14 @@ const Modalidades = () => {
   const [cardCrossShow, setcardCrossShow] = useState(false)
   const [cardDanceShow, setcardDanceShow] = useState(false)
   const [slidesView, setslidesView] = useState(1)
-
+  const [slidesResize, setslidesResize] = useState(1)
  
    
 
     useEffect(() =>{
 
         let observer = new IntersectionObserver((entries) =>{
-        console.log(entries[0].target.clientWidth)
+        
 
         if(entries[0].target.clientWidth > 1000){
           setslidesView(3)
@@ -40,7 +40,23 @@ const Modalidades = () => {
       })
       
       observer.observe(document.querySelector('div'))
+  }, [slidesResize])
+
+  useEffect(() =>{
+    
+    let cardContainerObserver = new IntersectionObserver((entries)=>{
+
+      if(entries[0].isIntersecting){
+        setslidesResize(slidesResize+1)
+      }else{
+        setslidesResize(slidesResize-1)
+      }
+
+    })
+
+    cardContainerObserver.observe(document.querySelector('div .cardContainer'))
   })
+
     
     
 
@@ -48,11 +64,11 @@ const Modalidades = () => {
 
   return (
     <>
-      <styles.modalidadesContainer>
+      <styles.modalidadesContainer >
     
         <h1>MODALIDADES</h1>
 
-        <styles.cardContainer>
+        <styles.cardContainer className='cardContainer hidden'>
 
           <Swiper
           slidesPerView={slidesView}
@@ -140,7 +156,7 @@ const Modalidades = () => {
       
         </styles.cardContainer>
 
-        <Link> VER MAIS +</Link>
+        <Link to={'/modalidades'}> VER MAIS +</Link>
       </styles.modalidadesContainer>
     </>
   )

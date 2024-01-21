@@ -26,7 +26,34 @@ const Home = () => {
     observer.observe(header)
     
   
+  }) 
+  
+
+  useEffect(() =>{
+    let sections = document.querySelectorAll('section');
+
+    let observerHome = new IntersectionObserver((entries) => {
+        
+        entries.forEach(entry =>{
+          console.log()
+          if(entry.isIntersecting === true){
+            entry.target.children[1].classList.add('show')
+        }
+        else{
+            entry.target.classList.remove('show')
+        }
+
+        })
+    })
+
+  
+    sections.forEach((section) => {
+      observerHome.observe(section)
+    })
+  
   })  
+
+
 
   return (
     <>
