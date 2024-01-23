@@ -64,6 +64,18 @@ a{
     
 }
 
+.matricula {
+    display:flex;
+    align-items: center;
+    gap:8px;
+    color:white;
+    background-color:rgb(240, 10, 10);
+    padding:0.3em 0.9rem;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
 
 
 
@@ -135,12 +147,6 @@ a:hover{
   
 }
 
-span{
-    color:white;
-    background-color:rgb(240, 10, 10);
-    padding:0.75em;
-    border-radius: 30px;
-}
 
 
 
@@ -261,9 +267,8 @@ a:hover{
 span{
     color:white;
     background-color:rgb(240, 10, 10);
-    padding:0.75em;
-    border-radius: 30px;
-    font-size:1rem;
+    
+   
 }
 
 

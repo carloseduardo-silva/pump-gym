@@ -19,7 +19,7 @@ const Planos = () => {
       </Link>
 
 
-      <Link style={{animationDelay: '200ms'}} to={'/matrícula'}>
+      <Link style={{animationDelay: '200ms'}} to={'/matricula'}>
         <styles.planosContainer >
         <h1>VEJA OS NOSSOS PLANOS</h1>
           <p> Planos a partir de apenas  R$97.00 por mês</p>

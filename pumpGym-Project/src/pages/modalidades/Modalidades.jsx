@@ -1,16 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import * as styles from "./styles"
-import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import './style.css';
 
-// import required modules
-import { Pagination } from 'swiper/modules';
+
+
+
 
 //components
 import Nav from '../../components/Nav/Nav'
@@ -26,41 +22,13 @@ const ModalidadesPage = () => {
   const [cardWorkoutShow, setcardWorkoutShow] = useState(false)
   const [cardCrossShow, setcardCrossShow] = useState(false)
   const [cardDanceShow, setcardDanceShow] = useState(false)
-  const [slidesView, setslidesView] = useState(1)
-  const [slidesResize, setslidesResize] = useState(1)
+ 
 
  
 
 
-    useEffect(() =>{
-      let observer = new IntersectionObserver((entries) =>{
-       
-        if(entries[0].target.clientWidth > 1000){
-          setslidesView(3)
-        }else{
-          setslidesView(1)
-        }
-      })
+ 
 
-    observer.observe(document.querySelector('div'))
-
-  },[slidesResize])
-
-  useEffect(() =>{
-    
-
-    let cardContainerObserver = new IntersectionObserver((entries) =>{
-      
-      if(entries[0].isIntersecting){
-      
-        setslidesResize(slidesResize+1)
-      }else{
-        setslidesResize(slidesResize-1)
-      }})
-
-    
-    cardContainerObserver.observe(document.querySelector('div .cardContainer'))
-  })
 
 
 
@@ -72,91 +40,97 @@ const ModalidadesPage = () => {
       <styles.modalidadesHeader>
         <h1> MODALIDADES </h1>
       </styles.modalidadesHeader>
-
-      <styles.modalidadesContainer className='cardContainer'>
     
-         <h1> CONHEÇA AS NOSSAS MODALIDADES PRESENTES NA ACADEMIA </h1>
+
+      <styles.title>
+           <h1> TEMOS COMO MISSÃO AJUDAR TODOS OS NOSSOS ALUNOS A ATINGIR OS SEUS RESULTADOS, SEJA COM QUAL MODALIDADE ESCOLHER. CONFIRA: </h1>
+      </styles.title>
+      
+      <styles.modalidadesContainer className='cardContainer'>
+
+         <styles.cardAsideNav>
+          <span>TODAS</span>
+          <span>ARTES MARCIAIS</span>
+          <span> CROSS TRAINING</span>
+          <span> DANÇAS </span>
+          <span> MUSCULAÇÃO 24H </span>
+          <span> NUTRICIONISTA </span>
+          <span> FUNCIONAL </span>
+          <span> CARDIO & HIT </span>
+          </styles.cardAsideNav> 
 
         <styles.cardContainer >
 
-        <Swiper
-          slidesPerView={slidesView}
-          spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          <SwiperSlide> <Link  to={'/modalidades/musculação'}>
+     
+         <Link  to={'/modalidades/musculação'}>
           <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
           
           <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
-          <p>Musculação 24H</p>
+          <p>MUSCULAÇÃO 24H</p>
           <span>SAIBA MAIS
              </span>
           </styles.card></Link>
-          </SwiperSlide>
+       
 
-          <SwiperSlide> <Link style={{animationDelay: '200ms'}} to={'/modalidades/crossTraining'}>
+          <Link style={{animationDelay: '200ms'}} to={'/modalidades/crossTraining'}>
           <styles.card onClick={() => setcardCrossShow(true)} IMG={crossTrainingIMG}>
   
           <styles.cardHoverModal isVisible={cardCrossShow}></styles.cardHoverModal>
-          <p>Cross Training</p>
+          <p>CROSS TRAINING</p>
           <span>SAIBA MAIS
             </span>
           </styles.card>
-          </Link></SwiperSlide>
+          </Link>
 
-          <SwiperSlide><Link style={{animationDelay: '400ms'}} to={'/modalidades/danças'}>
+          <Link style={{animationDelay: '400ms'}} to={'/modalidades/danças'}>
           <styles.card onClick={() => setcardDanceShow(true)} IMG={danceIMG}>
           <styles.cardHoverModal isVisible={cardDanceShow}></styles.cardHoverModal>
-          <p>Danças</p>
+          <p>DANÇAS</p>
           <span>SAIBA MAIS
           </span>
           </styles.card>
-          </Link></SwiperSlide>
+          </Link>
 
 
-          <SwiperSlide><Link  to={'/modalidades/musculação'}>
+          <Link  to={'/modalidades/musculação'}>
           <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
           
           <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
-          <p>Musculação 24H</p>
+          <p>ARTES MARCIAIS</p>
           <span>SAIBA MAIS
              </span>
-          </styles.card></Link></SwiperSlide>
+          </styles.card></Link>
 
 
-          <SwiperSlide> <Link  to={'/modalidades/musculação'}>
+           <Link  to={'/modalidades/musculação'}>
           <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
           
           <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
-          <p>Musculação 24H</p>
+          <p>FUNCIONAL</p>
           <span>SAIBA MAIS
              </span>
-          </styles.card></Link></SwiperSlide>
+          </styles.card></Link>
 
 
-          <SwiperSlide> <Link  to={'/modalidades/musculação'}>
+           <Link  to={'/modalidades/musculação'}>
           <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
           
           <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
-          <p>Musculação 24H</p>
+          <p>NUTRICIONISTA</p>
           <span>SAIBA MAIS
              </span>
-          </styles.card></Link></SwiperSlide>
+          </styles.card></Link>
 
 
-          <SwiperSlide> <Link  to={'/modalidades/musculação'}>
+           <Link  to={'/modalidades/musculação'}>
           <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
           
           <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
-          <p>Musculação 24H</p>
+          <p>CARDIO & HIT</p>
           <span>SAIBA MAIS
              </span>
-          </styles.card></Link></SwiperSlide>
-        </Swiper>
+          </styles.card></Link>
+     
   
         </styles.cardContainer>
 

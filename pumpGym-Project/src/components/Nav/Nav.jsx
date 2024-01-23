@@ -92,7 +92,8 @@ const Nav = (active) => {
 
         {contatoActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/contato'}> FALE CONOSCO</Link> : <Link to={'/contato'}> FALE CONOSCO</Link> }
 
-        <Link className='matricula' style={{borderBottom:'none', }} to={'/matricula'}><span>MATRICULE-SE</span></Link>
+        <Link className='matricula' style={{borderBottom:'none', }} to={'/matricula'}> 
+        <span class="material-symbols-outlined">person_add</span> MATRICULE-SE</Link>
       </styles.NavItens>
       
      
@@ -115,7 +116,7 @@ const Nav = (active) => {
 
         {contatoActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/contato'}> FALE CONOSCO</Link> : <Link to={'/contato'}> FALE CONOSCO</Link> }
 
-        <Link style={{borderBottom:'none'}} to={'/matricula'}><span>MATRICULE-SE</span></Link>
+        <Link className='matricula' style={{borderBottom:'none'}} to={'/matricula'}><span class="material-symbols-outlined">person_add</span> MATRICULE-SE</Link>
         </styles.navModalItens>
 
 

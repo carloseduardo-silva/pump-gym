@@ -8,6 +8,7 @@ export const contatoContainer = styled.div`
     justify-content: center;
     gap:4rem;
     padding: 12rem 2rem;
+    background-color: #F9f6EE;
 
 
     @media (max-width: 1000px){
@@ -62,6 +63,7 @@ export const form = styled.form`
         font-size:1.5rem;
         font-family: 'Teko', sans-serif;
         margin: 1rem auto;
+        border: none;
     }
 
     button:hover{
@@ -123,6 +125,32 @@ export const contato = styled.div`
     
     a:hover{
         color: rgb(110, 110, 110);
+    }
+
+    div.socialMedia-icons{
+        display:flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content:center;
+        margin: 1rem 0rem;
+        gap: 1rem;
+        position: relative;
+        top: 41%;
+        
+    }
+
+    div.socialMedia-icons img{
+        background-color: rgb(255, 10, 10);
+        padding: 0.5rem;
+        border-radius: 50%;
+        
+    }
+
+    div.socialMedia-icons img:hover{
+        cursor:pointer;
+        transform: scale(1.02);
+        transition: 250ms;
+       
     }
 
 

@@ -5,9 +5,11 @@ import {keyframes} from "styled-components";
 const modalEnter = keyframes`
 
 0%{
+    transform: translate(40% , -45%);
     opacity: 0;
 }
 100%{
+    transform: translate(-50% , -45%);
     opacity:1;
 }
 
@@ -21,11 +23,11 @@ justify-content: center;
 gap:3rem;
 align-items: center;
 height: 100vh;
-padding: 2rem;
+padding-top: 2rem;
 background-color: #F9f6EE;
 
 &.black{
-    background-color: rgb(0, 0, 0, 0.4);
+    background-color: rgb(0, 0, 0, 0.2);
 }
 
 
@@ -70,40 +72,6 @@ h2{
 
 `
 
-export const modalAluno = styled.div`
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    position: absolute;
-    width: 60vw;
-    max-width: 800px;
-    background-color: white;
-    border-radius: 10px;
-    transform:translate(-50%, -45%);
-    left: 50%;
-    top: 50%;
-    justify-content: space-between;
-    padding: 1rem;
-    animation: ${modalEnter} 600ms;
-
-
-    span{
-        font-size: 2rem;
-       
-    }
-
-    span:hover{
-        cursor:pointer;
-    }
-
-    @media (max-width:1000px) {
-        width: 80vw;
-       
-
-    }
-
-`
-
 export const modalHeader = styled.header`
     display:flex;
     flex-direction: row;
@@ -114,7 +82,6 @@ export const modalHeader = styled.header`
     padding:1rem;
     font-family: 'Nunito', 'Sans-Serif';
 `
-
 
 export const modalForm = styled.form`
     display:flex;
@@ -129,7 +96,7 @@ export const modalForm = styled.form`
     }
 
     input{
-        padding: 0.15rem 0rem;
+        padding: 0.15rem;
         font-size: 1.5rem;
         font-family: 'Nunito', 'Sans-Serif';
         border: 0.4px solid rgb(195, 195, 195);
@@ -155,5 +122,101 @@ export const modalForm = styled.form`
     p{
         font-size: 1.15rem;
     }
+
+`
+
+export const modalAluno = styled.div`
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    position: absolute;
+    width: 60vw;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    transform:translate(-50%, -45%);
+    left: 50%;
+    top: 50%;
+    justify-content: space-between;
+    padding: 1rem;
+    animation: ${modalEnter} 400ms;
+
+
+    span{
+        font-size: 2rem;
+       
+    }
+
+    span:hover{
+        cursor:pointer;
+    }
+
+    @media (max-width:1000px) {
+        width: 80vw;
+       
+
+    }
+
+`
+
+export const tableAluno = styled.div`
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+    align-items:center;
+    padding:7.5rem 0rem 1.25rem 0rem;
+    font-family: 'Nunito', 'Sans-Serif';
+    background-color: rgb(10, 10, 10);
+
+
+    header{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+        flex-direction:row;
+        margin: 2rem 0rem 0.5rem;
+        width: 100%;
+    }
+
+    header span{
+        font-size: 2rem;
+        color:white;
+        font-size: 3rem;
+        margin-right: 2rem;
+    }
+
+    header span:hover{
+        cursor:pointer;
+    }
+
+    header h2{
+        color:white;
+        font-size: 2.5rem;
+        margin-left: 2rem;
+    }
+
+    table, th, td {
+        
+        border-collapse: collapse;
+        text-align:center;
+        color:white;
+        border: 0.5px solid rgb(150, 150, 150, 0.7);
+      }
+
+    table{
+        font-family: 'Nunito', sans-serif;
+        width:100%;
+        margin: 2.5rem 0rem;
+    }
+
+    th{
+        padding:1rem;
+    }
+
+    td{
+        padding: 2.75rem 1rem;
+        
+    }
+
 
 `

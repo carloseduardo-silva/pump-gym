@@ -113,7 +113,7 @@ const Modalidades = () => {
           <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
           
           <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
-          <p>Musculação 24H</p>
+          <p>CARDIO & HIT</p>
           <span>SAIBA MAIS
              </span>
           </styles.card></Link></SwiperSlide>
@@ -123,7 +123,7 @@ const Modalidades = () => {
           <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
           
           <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
-          <p>Musculação 24H</p>
+          <p>ARTES MARCIAIS</p>
           <span>SAIBA MAIS
              </span>
           </styles.card></Link></SwiperSlide>
@@ -133,7 +133,7 @@ const Modalidades = () => {
           <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
           
           <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
-          <p>Musculação 24H</p>
+          <p>NUTRICIONISTA</p>
           <span>SAIBA MAIS
              </span>
           </styles.card></Link></SwiperSlide>
@@ -143,7 +143,7 @@ const Modalidades = () => {
           <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
           
           <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
-          <p>Musculação 24H</p>
+          <p>FUNCIONAL</p>
           <span>SAIBA MAIS
              </span>
           </styles.card></Link></SwiperSlide>

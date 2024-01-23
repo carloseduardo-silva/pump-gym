@@ -93,6 +93,15 @@ const Contato = () => {
             <span class="material-symbols-outlined">location_on</span> 
             Unidades
         </Link>
+
+     
+        <div className='socialMedia-icons'>
+        <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/1A1A1A/whatsapp--v1.png" alt="whatsapp--v1"/>
+        <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/1A1A1A/instagram-new--v1.png" alt="instagram-new--v1"/>
+        <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/1A1A1A/linkedin.png" alt="linkedin"/>
+        <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/1A1A1A/facebook-new.png" alt="facebook-new"/>
+        </div>
+
         </styles.contato>
 
        </styles.contatoContainer>

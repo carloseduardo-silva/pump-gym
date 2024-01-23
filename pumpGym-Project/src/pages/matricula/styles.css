@@ -1,9 +1,4 @@
-#app { height: 100% }
-html,
-body {
-  position: relative;
-  height: 100%;
-}
+
 
 body {
   background: #eee;
@@ -23,11 +18,6 @@ body {
   padding: 0;
 }
 
-html,
-body {
-  position: relative;
-  height: 100%;
-}
 
 #app {
   display: flex;
@@ -35,40 +25,38 @@ body {
   align-items: center;
 }
 
-.swiper {
-  width: 300px;
-  height: 400px;
-}
+
 
 .swiper-slide {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
   border-radius: 18px;
   font-size: 30px;
   font-weight: bold;
-  color: #fff;
-  border: 0.75px solid rgb(240, 10 ,10);
+  color: white;
+ 
 
 }
 
-.swiper-slide:nth-child(1n) {
-  background-color: rgb(40, 40, 40);
+.swiper-slide h2{
+  font-family: 'Teko';
+  color: rgb(255, 29, 29);
+  font-size: 3.75rem;
 }
 
-.swiper-slide:nth-child(2n) {
-  background-color: rgb(40, 40, 40);
+.infos{
+  margin: 1.35rem 0px;
+  text-align: left;
+  font-size: 17px;
 }
 
-.swiper-slide:nth-child(3n) {
-  background-color: rgb(40, 40, 40);
+.infos p{
+  margin: 0.65rem 0rem;
 }
 
 
-@media (max-width: 550px) {
-    .swiper {
-        width: 250px;
-        height: 350px;
-      }
-    
-}
+
+
+

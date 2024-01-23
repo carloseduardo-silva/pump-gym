@@ -42,7 +42,7 @@ background-color: rgb(240, 240, 240);
 
 
 h1{
-    margin: 3rem 0rem;
+    margin: 4rem 0rem 2rem 0rem;
     font-family: 'Teko', sans-serif;
     font-size: 4rem;
     font-weight: 500;
@@ -91,6 +91,7 @@ a{
     border-radius:5px;
     width:auto;
     animation: ${divEnter} 1s;
+   
 }
 
 a:hover{
@@ -119,10 +120,10 @@ background-image: url(${(props) =>  props.IMG});
 background-position: center center;
 background-size: cover;
 background-repeat: no-repeat;
-width:350px;
+width:400px;
 height: 450px;
 z-index:3;
-box-shadow: 5px 5px 12px rgb(0, 0, 0, 0.5);
+box-shadow: 5px 5px 12px rgb(0, 0, 0, 0.3);
 font-family: 'Teko', sans-serif;
 
 
@@ -183,7 +184,7 @@ span{
 export const cardHoverModal = styled.div`
 display:flex;
 opacity:0;
-width:350px;
+width:400px;
 height:100%;
 margin-bottom: -8.45rem;
 background-color:rgba(255, 0, 0, 0.200);

@@ -28,22 +28,44 @@ const divEnter = keyframes`
 `
 
 
+export const title = styled.div`
 
+h1{
+    margin: 11rem auto 1.5rem;
+    font-family: 'Teko', sans-serif;
+    font-size: 3.25rem;
+    font-weight: 500;
+    max-width: 1000px;
+    text-align:center;
+    padding: 0rem 2rem;
+}
+
+@media (max-width: 1000px){
+  h1{
+    padding: 0rem 2rem;
+    margin: 10rem auto 0rem;
+  }
+}
+
+@media (max-width: 550px){
+    h1{
+        padding: 0rem 0.5rem;
+        font-size: 11vw;
+    }
+  }
+
+`
 
 export const modalidadesContainer = styled.div`
 display:flex;
-flex-direction:column;
-padding:5rem 1rem;
+flex-direction:row;
+padding:2rem 1rem;
 justify-content:center;
+align-items:start;
 text-align:center;
 
 
-h1{
-    margin: 3rem 0rem;
-    font-family: 'Teko', sans-serif;
-    font-size: 4rem;
-    font-weight: 500;
-}
+
 
 
 a{
@@ -71,6 +93,11 @@ a:hover{
     h1{
         font-size:3.2rem;
     }
+}
+
+@media (max-width: 1000px){
+    flex-direction:column;
+    align-items:center;
 }
 
 `
@@ -117,27 +144,90 @@ h1:hover{
 
 `
 
-
 export const cardContainer = styled.div`
 display:flex;
 flex-direction:row;
+flex-wrap: wrap;
 align-items:center;
-justify-content:space-around;
+justify-content:start;
 margin:1rem 0rem;
 
-a{
+& a{
     text-decoration: none;
-    padding:2px;
     border-radius:5px;
-    width:auto;
+    width:47%;
     animation: ${divEnter} 1s;
+    padding: 0px;
+    margin: 0.5rem;
 }
 
 
 
 @media (max-width:1000px){
-    gap:2rem;
+    
     flex-direction:column;
+   
+    width:100%;
+
+    a{
+        width:80vw;
+    }
+}
+
+@media (max-width:500px){
+    
+    a{
+        width:90vw;
+    }
+}
+`
+
+export const cardAsideNav = styled.nav`
+display:flex;
+flex-direction:column;
+text-align: left;
+gap: 0.95rem;
+font-family: 'Teko', 'Sans-Serif';
+padding: 2.25rem 1rem 1rem 0.5rem;
+
+
+span{
+    font-size: 1.6rem;
+    padding: 0.25rem 3rem;
+    color: rgb(80, 80, 80);
+}
+
+span:hover{
+    cursor:pointer;
+    border-left: 2px solid rgb(240, 10, 10);
+    
+}
+
+@media (max-width: 1000px){
+    flex-direction:row;
+    flex-wrap: wrap;
+    text-align:center;
+    align-items:center;
+    justify-content: center;
+    padding: 1.5rem 1.75rem 0.3rem 1.75rem;
+
+
+    span{
+        font-size: 1.25rem;
+        padding: 0.5rem;
+    }
+    
+    span:hover{
+        cursor:pointer;
+        border-bottom: 2px solid rgb(240, 10, 10);
+        border-left: none;
+        
+    }
+
+}
+
+@media (max-width: 500px){
+    padding: 1.5rem 0rem 0.3rem 0rem;
 }
 `
 
@@ -153,10 +243,8 @@ background-image: url(${(props) =>  props.IMG});
 background-position: center center;
 background-size: cover;
 background-repeat: no-repeat;
-width:350px;
+width:100%;
 height: 450px;
-z-index:3;
-box-shadow: 5px 5px 12px rgb(0, 0, 0, 0.5);
 font-family: 'Teko', sans-serif;
 
 
@@ -164,7 +252,7 @@ font-family: 'Teko', sans-serif;
 
 
 img{
-    width:300px;
+    width:400vw;
     height:300px;
 }
 
@@ -204,27 +292,23 @@ span{
    }
 }
 
-@media (max-width:1150px){
-    width:300px;
-}
 
-@media (max-width: 1000px){
-    width:80vw;
-}
+
+
 
 `
 
 export const cardHoverModal = styled.div`
 display:flex;
 opacity:0;
-width:350px;
+width:100%;
 height:100%;
 margin-bottom: -8.45rem;
 background-color:rgba(255, 0, 0, 0.200);
 z-index:4;
 
 &:hover{
-    transition:600ms;
+    transition:500ms;
     opacity:1;
     display:flex;
  
@@ -232,17 +316,10 @@ z-index:4;
 }
 
 
-@media (max-width: 1000px){
-    width:85%;
-}
-
-@media (max-width:1150px){
-    width:300px;
-}
 
 
-@media (max-width: 1000px){
-    width:80vw;
-}
+
+
+
 
 `

@@ -54,7 +54,7 @@ const Unidades = () => {
            
         </styles.cardUnityContainer>
 
-        <Link to={'/modalidades'}>
+        <Link to={'/unidades'}>
          CONHEÇA TODAS AS UNIDADES
         </Link>
       

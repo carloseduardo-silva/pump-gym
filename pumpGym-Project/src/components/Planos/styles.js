@@ -19,7 +19,7 @@ display:flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-padding: 4rem 1rem;
+padding: 6rem 1rem 8rem 1rem;
 gap:3rem;
 
 

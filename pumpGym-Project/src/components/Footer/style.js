@@ -9,6 +9,7 @@ padding:1.5em 4em;
 font-family: 'Nunito', 'Sans-serif';
 font-size: 1.5rem;
 color: black;
+border-top: 0.5px solid rgb(75, 75, 75);
 `
 
 export const Logo = styled.div `
@@ -47,7 +48,6 @@ export const info = styled.div`
 
 display:flex;
 flex-direction: column;
-justify-content:space-around;
 margin: 1rem 0rem;
 
 
@@ -75,5 +75,27 @@ a{
 
 a:hover{
     color: rgb(110, 110, 110);
+}
+
+div.socialMedia-icons{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    gap: 1rem;
+    
+}
+
+div.socialMedia-icons img{
+    background-color: rgb(255, 10, 10);
+    padding: 0.5rem;
+    border-radius: 50%;
+    
+}
+
+div.socialMedia-icons img:hover{
+    cursor:pointer;
+    transform: scale(1.05);
+    transition: 250ms;
+   
 }
 `

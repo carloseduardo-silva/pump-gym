@@ -26,6 +26,15 @@ const UnidadesPage = () => {
               <span style={{marginLeft:'14px'}}>P</span>UM<span>P</span> </h1>
           </styles.title>
 
+          <styles.searchUnityContainer>
+
+            <label>
+
+              <input placeholder='Digite seu Endereço' type="text" /> <button>Buscar</button>
+            </label>
+            
+          </styles.searchUnityContainer>
+
           <styles.cardUnityContainer> 
               <styles.cardUnities> 
                 <img src="https://i.pinimg.com/550x/5c/5b/2f/5c5b2f89f2939fda5802636663ba1cd4.jpg" alt="" />
@@ -73,7 +82,7 @@ const UnidadesPage = () => {
 
         
 
-      </styles.unidadesContainer>
+        </styles.unidadesContainer>
 
        
       

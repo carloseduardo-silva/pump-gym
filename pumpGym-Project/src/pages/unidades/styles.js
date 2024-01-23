@@ -121,6 +121,63 @@ span{
 
 
 `
+export const searchUnityContainer = styled.div`
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center; 
+    margin: 2.5rem 1rem 5rem 1rem;
+  
+
+    input{
+        padding: 0.2rem 0.3rem;
+        font-size: 1.5rem;
+        font-family: 'Nunito', 'Sans-Serif';
+        border: 0.4px solid rgb(195, 195, 195);
+        width: 425px;
+    }
+
+    button{
+        text-decoration:none;
+        padding:0.15rem 0.75rem;
+        background-color:rgb(240, 10, 10);
+        color:white;
+        font-size:1.65rem;
+        font-family: 'Teko', sans-serif;
+        border: none;
+        border-radius: 3px;
+    }
+
+    button:hover{
+        cursor:pointer;
+        transform: scale(1.05);
+        transition: 250ms;
+    }
+
+
+    @media (max-width: 620px){
+        text-align:center;
+        
+        input{
+            font-size: 1.75rem;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        button{
+            padding:0.2rem 1.25rem;
+            font-size:1.85rem;
+        }
+    }
+
+
+    @media (min-width: 1000px){
+        input{
+            width: 580px;
+        }
+    }
+    
+`
+
 export const cardUnityContainer = styled.div`
 display:flex;
 flex-direction: row;
