@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import Nav from '../../components/Nav/Nav'
 
 import * as styles from "./styles"
@@ -62,7 +63,7 @@ const Home = () => {
     <styles.advertisementContainer className='header'>
       <p>WELCOME TO PUMP GYM</p>
       <h1> Chegou o momento de dar um <span>PUMP</span> na sua vida.</h1>
-      <styles.mobileTitle>Matricule-se já</styles.mobileTitle>
+      <Link to={'/matricula'}> <styles.mobileTitle>Matricule-se já</styles.mobileTitle></Link>
       
     </styles.advertisementContainer>
     

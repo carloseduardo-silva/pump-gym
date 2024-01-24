@@ -37,6 +37,11 @@ span{
     color:red;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 @media (max-width: 768px){
  p{
     font-size:14px;
@@ -78,6 +83,8 @@ export const mobileTitle = styled.h3`
         transform: scale(1.1);
 
     }
+
+   
 
     @media (max-width:1000px){
         display:flex;

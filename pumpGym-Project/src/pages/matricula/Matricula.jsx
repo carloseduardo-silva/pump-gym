@@ -36,6 +36,7 @@ const Matricula = () => {
             <h2> PLANO PUMP</h2>
             <p> Pague menos para treinar o quanto quiser na sua unidade.</p>
             <h3>A PARTIR DE <br /> R$99,00/mês</h3>
+            <p>12 meses de fidelidade*</p>
             <button>COMEÇAR AGORA</button>
           
             </div>
@@ -69,6 +70,7 @@ const Matricula = () => {
             <h2> PLANO BLACK</h2>
             <p>Treine quando quiser em qualquer unidade.</p>
             <h3>A PARTIR DE <br /> R$139,00/mês</h3>
+            <p>12 meses de fidelidade*</p>
             <button>COMEÇAR AGORA</button>
             </div>
             {showBlackBenefits && <div className='infos'>
@@ -153,11 +155,11 @@ const Matricula = () => {
             <tr > 
               <td style={{textAlign:'left', border:'none'}}> Confira as condições da academia escolhida. </td>
 
-              <td style={{border:'none'}}>  <h2>A PARTIR DE <br /> R$99,00/mês</h2> </td>
+              <td style={{border:'none'}}>  <h2>A PARTIR DE <br /> R$99,00/mês</h2> <span>12 meses de fidelidade*</span> </td>
 
               <td style={{border:'none'}}>  <h2>A PARTIR DE <br /> R$119,00/mês</h2> </td>
               
-              <td style={{border:'none'}}>  <h2>A PARTIR DE <br /> R$139,00/mês</h2> </td>
+              <td style={{border:'none'}}>  <h2>A PARTIR DE <br /> R$139,00/mês</h2> <span>12 meses de fidelidade*</span> </td>
             </tr>
 
 

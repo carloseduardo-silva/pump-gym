@@ -167,6 +167,11 @@ export const planosDesktopContainer = styled.div`
         text-align: left;
 
       }
+      
+      td span{
+    
+        color: rgb(100, 100, 100, 0.7);
+      }
 
 
     @media (min-width:868px){
@@ -240,7 +245,7 @@ export const planosMobileContainer = styled.div`
         font-size: 1.65rem;
         border: none;
         letter-spacing: 1px;
-        margin: 1.2rem 0rem;
+        margin: 2rem 0rem 1.2rem;
     }
 
     div.header button:hover{

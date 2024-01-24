@@ -164,7 +164,7 @@ export const tableAluno = styled.div`
     flex-direction:column;
     width: 100%;
     align-items:center;
-    padding:7.5rem 0rem 1.25rem 0rem;
+    padding:6.5rem 0rem 2rem 0rem;
     font-family: 'Nunito', 'Sans-Serif';
     background-color: rgb(10, 10, 10);
 
@@ -206,16 +206,23 @@ export const tableAluno = styled.div`
     table{
         font-family: 'Nunito', sans-serif;
         width:100%;
-        margin: 2.5rem 0rem;
+        margin-top: 2.5rem
     }
 
     th{
-        padding:1rem;
+        font-family: 'Teko', sans-serif;
+        font-size:3rem;
     }
 
-    td{
-        padding: 2.75rem 1rem;
-        
+    th span{
+        font-size:3.5rem;
+    }
+
+
+    td p.hour{
+        font-family: 'Teko', sans-serif;
+        font-size:4rem;
+        padding: 0.5rem 0rem;
     }
 
 

@@ -88,7 +88,7 @@ const Aluno = () => {
           </tr>
 
           <tr>
-            <td>7:00</td>
+            <td ><p className='hour'>7:15</p></td>
             <td> X </td>
             <td> X </td>
             <td> X </td>
@@ -99,7 +99,7 @@ const Aluno = () => {
           </tr>
 
           <tr>
-            <td>8:00</td>
+            <td> <p className='hour'> 8:15</p></td>
             <td> X </td>
             <td> X </td>
             <td> X </td>
@@ -110,7 +110,7 @@ const Aluno = () => {
           </tr>
 
           <tr>
-            <td>18:00</td>
+            <td><p className='hour'>18:00</p></td>
             <td> X </td>
             <td> X </td>
             <td> X </td>
@@ -121,7 +121,7 @@ const Aluno = () => {
           </tr>
 
           <tr>
-            <td>19:00</td>
+            <td> <p className='hour'>19:00</p></td>
             <td> X </td>
             <td> X </td>
             <td> X </td>
@@ -132,7 +132,7 @@ const Aluno = () => {
           </tr>
 
           <tr>
-            <td>20:00</td>
+            <td> <p className='hour'>20:00</p></td>
             <td> X </td>
             <td> X </td>
             <td> X </td>
