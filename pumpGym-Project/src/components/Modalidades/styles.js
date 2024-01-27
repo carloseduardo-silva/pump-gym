@@ -33,7 +33,7 @@ const divEnter = keyframes`
 export const modalidadesContainer = styled.section`
 display:flex;
 flex-direction:column;
-padding:1rem 1rem 3.5rem 1rem;
+padding:2rem 1rem 4rem 1rem;
 justify-content:center;
 text-align:center;
 background-color: rgb(240, 240, 240);

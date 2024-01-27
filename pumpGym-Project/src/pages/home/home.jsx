@@ -4,6 +4,7 @@ import Nav from '../../components/Nav/Nav'
 
 import * as styles from "./styles"
 import Unidades from '../../components/Unidades/Unidades'
+import Info from '../../components/Info/Info'
 import Modalidades from '../../components/Modalidades/modalidades'
 import Planos from '../../components/Planos/Planos'
 import Footer from '../../components/Footer/Footer'
@@ -38,6 +39,7 @@ const Home = () => {
         entries.forEach(entry =>{
           console.log()
           if(entry.isIntersecting === true){
+         
             entry.target.children[1].classList.add('show')
         }
         else{
@@ -69,6 +71,7 @@ const Home = () => {
     
     <Unidades/>
 
+    <Info/>
     <Modalidades/>
     <Planos/>
 

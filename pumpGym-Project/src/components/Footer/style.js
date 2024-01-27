@@ -5,11 +5,11 @@ display:flex;
 flex-direction: column;
 align-items:center;
 justify-content:center;
-padding:1.5em 4em;
+padding:2em 4em 1em;
 font-family: 'Nunito', 'Sans-serif';
 font-size: 1.5rem;
 color: black;
-border-top: 0.5px solid rgb(75, 75, 75);
+border-top: 0.5px solid rgb(200, 200, 200);
 `
 
 export const Logo = styled.div `

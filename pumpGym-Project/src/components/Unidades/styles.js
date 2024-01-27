@@ -16,12 +16,31 @@ const cardUnitiesEnter = keyframes`
 
 `
 
+export const backgroundTitle = styled.h3`
+
+    font-size:5.5rem;
+    font-family: 'Teko', sans-serif;
+    position:relative;
+    transform: rotate(90deg);
+    top: 40%;
+    right: 45%;
+    letter-spacing: 28px;
+    color: rgb(210, 210, 210, 0.35);
+
+    
+    @media(max-width: 1100px){
+        display:none;
+        opacity:0;
+    }
+
+`
+
 
 export const unidadesContainer = styled.section`
 display:flex;
 flex-direction: column;
 align-items:center;
-padding:4em 2em 6em 2em;
+padding:4em 2em;
 
 
 

@@ -19,10 +19,13 @@ const ModalidadesPage = () => {
   const [crossTrainingIMG, setcrossTraingIMG] = useState('../../../public/crossTIMGblack.png')
   const [workoutIMG, setworkoutIMG] = useState('../../../public/workoutIMGblack.png')
   const [danceIMG, setdanceIMG] = useState('../../../public/danceIMGblack2.png')
+  const [lutaIMG, setlutaIMG] = useState('../../../public/lutaIMGblack.png')
+  const [funcionalIMG, setfuncionalIMG] = useState('../../../public/funcionalIMGblack.png')
   const [cardWorkoutShow, setcardWorkoutShow] = useState(false)
   const [cardCrossShow, setcardCrossShow] = useState(false)
   const [cardDanceShow, setcardDanceShow] = useState(false)
- 
+  const [cardlutaShow, setcardlutaShow] = useState(false)
+  const [cardfuncionalShow, setcardfuncionalShow] = useState(false)
 
  
 
@@ -93,9 +96,9 @@ const ModalidadesPage = () => {
 
 
           <Link  to={'/modalidades/musculação'}>
-          <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
+          <styles.card onMouseEnter={() => setcardlutaShow(true)} IMG={lutaIMG}>
           
-          <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
+          <styles.cardHoverModal isVisible={cardlutaShow}></styles.cardHoverModal>
           <p>ARTES MARCIAIS</p>
           <span>SAIBA MAIS
              </span>
@@ -103,13 +106,14 @@ const ModalidadesPage = () => {
 
 
            <Link  to={'/modalidades/musculação'}>
-          <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
+            <styles.card style={{backgroundPosition:'top'}} onMouseEnter={() => setcardfuncionalShow(true)} IMG={funcionalIMG}>
           
-          <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
-          <p>FUNCIONAL</p>
-          <span>SAIBA MAIS
+            <styles.cardHoverModal isVisible={cardfuncionalShow}></styles.cardHoverModal>
+            <p>FUNCIONAL</p>
+            <span>SAIBA MAIS
              </span>
-          </styles.card></Link>
+            </styles.card>
+          </Link>
 
 
            <Link  to={'/modalidades/musculação'}>

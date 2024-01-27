@@ -6,6 +6,7 @@ const Unidades = () => {
   
 
   return (
+   <> 
     <styles.unidadesContainer id='unidadesContainer'  >
 
         <styles.title> 
@@ -59,6 +60,9 @@ const Unidades = () => {
         </Link>
       
     </styles.unidadesContainer>
+
+    <styles.backgroundTitle> UNIDADES</styles.backgroundTitle>
+    </>
   )
 }
 

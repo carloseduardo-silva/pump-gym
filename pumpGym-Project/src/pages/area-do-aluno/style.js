@@ -166,7 +166,8 @@ export const tableAluno = styled.div`
     align-items:center;
     padding:6.5rem 0rem 2rem 0rem;
     font-family: 'Nunito', 'Sans-Serif';
-    background-color: rgb(10, 10, 10);
+    background-color: #F9f6EE;
+    color: rgb(240, 10, 10);
 
 
     header{
@@ -174,56 +175,62 @@ export const tableAluno = styled.div`
         align-items:center;
         justify-content: space-between;
         flex-direction:row;
-        margin: 2rem 0rem 0.5rem;
+        margin: 2.2em 0rem 0rem;
         width: 100%;
     }
 
     header span{
-        font-size: 2rem;
-        color:white;
+      
         font-size: 3rem;
         margin-right: 2rem;
     }
 
     header span:hover{
         cursor:pointer;
+        transform: scale(1.1);
+        transition: 250ms;
     }
 
     header h2{
-        color:white;
+      
         font-size: 2.5rem;
         margin-left: 2rem;
     }
 
     table, th, td {
-        
+        background-color:#F9f6EE;
+        color:rgb(240, 10, 10);
         border-collapse: collapse;
         text-align:center;
-        color:white;
-        border: 0.5px solid rgb(150, 150, 150, 0.7);
+        border: 0.5px solid rgb(200, 200, 200, 0.7);
       }
 
     table{
         font-family: 'Nunito', sans-serif;
         width:100%;
-        margin-top: 2.5rem
+        margin-top: 2rem
     }
 
     th{
+        
         font-family: 'Teko', sans-serif;
-        font-size:3rem;
+        font-size:2.5rem;
+        padding: 12px 0px;
     }
 
     th span{
-        font-size:3.5rem;
+        font-size:4rem;
     }
 
 
     td p.hour{
         font-family: 'Teko', sans-serif;
-        font-size:4rem;
+        font-size:3.75rem;
         padding: 0.5rem 0rem;
+        letter-spacing: 5px
+        
     }
 
+   
 
 `

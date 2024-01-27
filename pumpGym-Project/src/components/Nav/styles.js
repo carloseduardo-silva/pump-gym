@@ -93,6 +93,8 @@ padding-top: 10px;
 
 &:hover{
     cursor:pointer;
+    transform: scale(1.03);
+    transition: 200ms;
 }
 
 span {
