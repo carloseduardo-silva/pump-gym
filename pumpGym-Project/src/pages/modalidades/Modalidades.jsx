@@ -39,11 +39,12 @@ const ModalidadesPage = () => {
   const [nutriShow, setnutriShow] = useState(true)
   const [cardioShow, setcardioShow] = useState(true)
 
+  const [cardWidth, setcardWidth] = useState('47%')
 
  
   const showAllModalities = (activeEl) =>{
 
-
+    setcardWidth('47%')
     setWorkoutShow(true)
     setCrossShow(true)
     setDanceShow(true)
@@ -66,7 +67,7 @@ const ModalidadesPage = () => {
 
     cleanActiveClasses()
     modalitieEl.classList.add('active')
-
+    setcardWidth('460px')
     switch(modalitieEl.innerHTML){
 
       case "ARTES MARCIAIS":
@@ -175,7 +176,7 @@ const ModalidadesPage = () => {
           <span onClick={(e) => showModalitie(e.target)}>CARDIO & HIT</span>
           </styles.cardAsideNav> 
 
-        <styles.cardContainer >
+        <styles.cardContainer width={cardWidth} >
 
      
            {WorkoutShow && <Link  to={'/modalidades/musculação'}>

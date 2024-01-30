@@ -1,6 +1,7 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useEffect, useState } from 'react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -19,7 +20,43 @@ import  Footer  from '../../components/Footer/Footer'
 
 const Modalidade = (pageInfo) => {
 
-  console.log(pageInfo.pageInfo)
+  const [slidesResize, setslidesResize] = useState(1)
+  const [slidesView, setslidesView] = useState(3)
+
+  useEffect(() =>{
+
+    let observer = new IntersectionObserver((entries) =>{
+    
+
+    if(entries[0].target.clientWidth > 1000){
+      setslidesView(3)
+     
+    }else{
+      setslidesView(1)
+     
+    }
+  })
+  
+  observer.observe(document.querySelector('div'))
+}, [slidesResize])
+
+
+  useEffect(() =>{
+
+  let cardContainerObserver = new IntersectionObserver((entries)=>{
+
+    if(entries[0].isIntersecting){
+      setslidesResize(slidesResize+1)
+    }else{
+      setslidesResize(slidesResize-1)
+    }
+
+  })
+
+  cardContainerObserver.observe(document.querySelector('div .modalidadeContainer'))
+  })
+
+  
   return (
     <>
     <Nav  active={'modalidades'}></Nav>
@@ -28,7 +65,7 @@ const Modalidade = (pageInfo) => {
     <h1>{pageInfo.pageInfo.title}</h1>
     </styles.modalidadeHeader>
 
-    <styles.modalidadeContainer>
+    <styles.modalidadeContainer className='modalidadeContainer'>
 
 
     <styles.description>
@@ -37,8 +74,8 @@ const Modalidade = (pageInfo) => {
         <div className='unidades'>
             <h2> DISPONÍVEL NAS UNIDADES:</h2>
             
-          <Swiper
-          slidesPerView={3}
+          <Swiper style={{height:'520px', maxWidth:'91vw', marginTop:'-3rem'}}
+          slidesPerView={slidesView}
           spaceBetween={30}
           pagination={{
             clickable: true,
@@ -118,13 +155,13 @@ const Modalidade = (pageInfo) => {
 
     <styles.modalitiesAsideNav>
             <h2> + MODALIDADES</h2>
-          <Link>ARTES MARCIAIS</Link>
-          <Link>CROSS TRAINING</Link>
-          <Link>DANÇAS</Link>
-          <Link>MUSCULAÇÃO 24H</Link>
-          <Link>NUTRICIONISTA</Link>
-          <Link>FUNCIONAL</Link>
-          <Link>CARDIO & HIT</Link> 
+          <Link to={'/modalidades/artes-marciais'}>ARTES MARCIAIS</Link>
+          <Link to={'/modalidades/crossTraining'}>CROSS TRAINING</Link>
+          <Link to={'/modalidades/danças'}>DANÇAS</Link>
+          <Link to={'/modalidades/musculação'}>MUSCULAÇÃO 24H</Link>
+          <Link to={'/modalidades/nutriocionista'}>NUTRICIONISTA</Link>
+          <Link to={'/modalidades/funcional'}>FUNCIONAL</Link>
+          <Link to={'/modalidades/cardio-hit'}>CARDIO & HIT</Link> 
     </styles.modalitiesAsideNav>
 
     </styles.modalidadeContainer>

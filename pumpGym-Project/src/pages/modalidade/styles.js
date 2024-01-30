@@ -65,7 +65,6 @@ display:flex;
 flex-direction:row;
 padding:2rem 1rem;
 justify-content:center;
-align-items:start;
 text-align:center;
 margin: 1rem 0rem 1rem 2rem;
 gap: 2rem;
@@ -90,6 +89,9 @@ a:hover{
 `
 
 export const description = styled.div`
+display:flex;
+flex-direction: column;
+gap: 1rem;
 margin: 1rem 0rem;
 
 
@@ -103,6 +105,7 @@ p{
     font-weight: 500;
     text-align:left;
     max-width:950px;
+    margin: 1.5rem 0.5rem;
 
 }
 
@@ -125,6 +128,18 @@ div.unidades h2{
     font-size: 2rem;
 }
 
+@media(max-width: 1100px){
+
+    p{
+        text-align:center;
+    }
+
+    div.unidades{
+        justify-content: center;
+    }
+
+}
+
 
 
 `
@@ -136,22 +151,50 @@ export const modalitiesAsideNav = styled.div`
     justify-content:start;
     background-color: white;
     padding: 1rem;
-    gap:0.5rem;
+    gap:2rem;
     margin: 1rem 0rem;
+    border-radius: 5px;
+    border: 0.5px solid rgb(240, 10, 10);
+    margin-bottom: 8rem;
+
+
+    &:hover{
+        border: 0.5px solid rgb(180, 180, 180);
+        transition:320ms;
+    }
 
     a{
         text-decoration:none;
         color:rgb(240, 10, 10);
+        font-size: 2rem;
+        font-family: 'Teko', sans-serif;
     }
 
     a:hover{
         transform: scale(1.02);
-        transition:250ms;
+        transition:200ms;
         color:rgb(180, 180, 180);
+        cursor:pointer;
+        text-decoration:underline;
     }
 
     h2{
         margin: 0.5rem 0rem 2rem;
+        font-family: 'TEKO', sans-serif;
+        font-size: 2.25rem;
+    }
+
+    @media (max-width: 1150px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        gap: 8px 1.5rem;
+        width: 85%;
+    }
+
+
+    h2{
+        margin: 6px 0px;
     }
 `
 
@@ -182,11 +225,18 @@ p{
    
 }
 
-@media (max-width: 650px){
-    width:90%;
+@media (max-width: 600px){
+    width:90vw;
 }
 img{
     width:99%;
+}
+
+
+@media(max-width: 1000px){
+
+    width: 80vw;
+
 }
 
 `

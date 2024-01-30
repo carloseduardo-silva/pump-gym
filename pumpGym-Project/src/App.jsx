@@ -26,9 +26,9 @@ function App() {
         <Route path='/contato' element={<Contato/>}> </Route>
         <Route path='/aluno' element={<Aluno/>}> </Route>
         <Route path='/matricula' element={<Matricula/>}> </Route>
-        <Route path='modalidades/musculação' element={<Modalidade pageInfo={{title:' MUSCULAÇÃO 24H ', description:'bla bla bla'}}/>}> </Route>
-        <Route path='modalidades/crossTraining' element={<Modalidade  pageInfo={{title:' CROSS TRAINING ', description:'bla bla bla'}}/>}> </Route>
-        <Route path='modalidades/nutricionista' element={<Modalidade  pageInfo={{title:'NUTRICIONISTA ', description:'bla bla bla'}}/>}> </Route>
+        <Route path='modalidades/musculação' element={<Modalidade pageInfo={{title:' MUSCULAÇÃO 24H ', description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est magnam soluta deleniti incidunt, velit reprehenderit natus porro esse facilis saepe amet fugit reiciendis nisi sit quos aspernatur quia, non veritatis!'}}/>}> </Route>
+        <Route path='modalidades/crossTraining' element={<Modalidade  pageInfo={{title:' CROSS TRAINING ', description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est magnam soluta deleniti incidunt, velit reprehenderit natus porro esse facilis saepe amet fugit reiciendis nisi sit quos aspernatur quia, non veritatis!'}}/>}> </Route>
+        <Route path='modalidades/nutricionista' element={<Modalidade  pageInfo={{title:'NUTRICIONISTA ', description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est magnam soluta deleniti incidunt, velit reprehenderit natus porro esse facilis saepe amet fugit reiciendis nisi sit quos aspernatur quia, non veritatis!'}}/>}> </Route>
         <Route path='modalidades/funcional' element={<Modalidade  pageInfo={{title:'FUNCIONAL', description:'bla bla bla'}}/>}> </Route>
         <Route path='modalidades/danças' element={<Modalidade  pageInfo={{title:'DANÇAS', description:'bla bla bla'}}/>}> </Route>
         <Route path='modalidades/cardio-hit' element={<Modalidade  pageInfo={{title:'CARDIO & HIT', description:'bla bla bla'}}/>}> </Route>

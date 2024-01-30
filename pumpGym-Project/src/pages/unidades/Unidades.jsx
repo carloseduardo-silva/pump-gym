@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import * as styles from "./styles"
 import { Link } from 'react-router-dom'
 
@@ -8,6 +8,39 @@ import  Footer  from '../../components/Footer/Footer'
 
 
 const UnidadesPage = () => {
+
+  const [inputCep, setinputCep] = useState()
+  const [inputCity, setinputCity] = useState(false)
+  const [inputNeighborhood, setinputNeighborhood] = useState(false)
+  const [inputState, setinputState] = useState(false)
+  const [reqError, setReqError] = useState(false)
+
+  const searchLocation =  (cep) =>{
+   
+    if(cep !== ''  ){
+      const url = `https://brasilapi.com.br/api/cep/v2/{${cep}}`
+    
+      const req = new XMLHttpRequest()
+      req.open('GET', url)
+      req.send()
+
+      req.onload = () =>{
+        if(req.status === 200){
+          setReqError(false)
+          let locationObj = JSON.parse(req.response)
+          setinputState(locationObj.state)
+          setinputCity(locationObj.city)
+          setinputNeighborhood(locationObj.neighborhood)
+          
+        }
+        else{
+          setinputCity(false)
+          setReqError('Não foi possivel o acesso ao endereço, por favor digite adequadamente o CEP.')
+        }
+      }
+    } 
+  }
+
   return (
     <>
        <Nav  active={'unidades'}></Nav>
@@ -30,9 +63,11 @@ const UnidadesPage = () => {
 
             <label>
 
-              <input placeholder='Digite seu Endereço' type="text" /> <button>Buscar</button>
+              <input required onChange={(e) => setinputCep(e.target.value)} placeholder='Digite seu CEP' type="text" /> <button onClick={() => searchLocation(inputCep)}>Buscar</button>
             </label>
-            
+
+            {inputCity && <p>Unidades mais próximas em: <span>{inputCity} - {inputState}, Bairro {inputNeighborhood}:</span></p>}
+            {reqError && <p style={{color:'red'}}> {reqError}</p>}
           </styles.searchUnityContainer>
 
           <styles.cardUnityContainer> 

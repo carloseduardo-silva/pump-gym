@@ -155,7 +155,7 @@ margin:1rem 0rem;
 & a{
     text-decoration: none;
     border-radius:5px;
-    width:47%;
+    width:${(props) => props.width};
     animation: ${divEnter} 1s;
     padding: 0px;
     margin: 0.5rem;

@@ -123,10 +123,10 @@ span{
 `
 export const searchUnityContainer = styled.div`
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items:center;
     justify-content:center; 
-    margin: 2.5rem 1rem 5rem 1rem;
+    margin: 2.5rem 1rem;
   
 
     input{
@@ -152,6 +152,16 @@ export const searchUnityContainer = styled.div`
         cursor:pointer;
         transform: scale(1.05);
         transition: 250ms;
+    }
+
+    p{
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.5rem;
+        margin: 3.5rem 0rem 0.5rem;
+    }
+
+    p span{
+        font-weight: bolder;
     }
 
 
