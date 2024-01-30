@@ -60,7 +60,7 @@ export const modalidadesContainer = styled.div`
 display:flex;
 flex-direction:row;
 padding:2rem 1rem;
-justify-content:center;
+justify-content:start;
 align-items:start;
 text-align:center;
 
@@ -201,6 +201,10 @@ span:hover{
     cursor:pointer;
     border-left: 2px solid rgb(240, 10, 10);
     
+}
+
+.active{
+    border-left: 2px solid rgb(240, 10, 10);
 }
 
 @media (max-width: 1000px){

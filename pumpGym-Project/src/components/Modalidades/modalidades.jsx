@@ -19,9 +19,17 @@ const Modalidades = () => {
   const [crossTrainingIMG, setcrossTraingIMG] = useState('../../../public/crossTIMGblack.png')
   const [workoutIMG, setworkoutIMG] = useState('../../../public/workoutIMGblack.png')
   const [danceIMG, setdanceIMG] = useState('../../../public/danceIMGblack2.png')
+  const [lutaIMG, setlutaIMG] = useState('../../../public/lutaIMGblack.png')
+  const [funcionalIMG, setfuncionalIMG] = useState('../../../public/funcionalIMGblack.png')
+  const [nutriIMG, setnutriIMG] = useState('../../../public/nutriIMGblack.png')
+  const [cardioIMG, setcardioIMG] = useState('../../../public/cardioIMGblack.png')
   const [cardWorkoutShow, setcardWorkoutShow] = useState(false)
   const [cardCrossShow, setcardCrossShow] = useState(false)
   const [cardDanceShow, setcardDanceShow] = useState(false)
+  const [cardlutaShow, setcardlutaShow] = useState(false)
+  const [cardfuncionalShow, setcardfuncionalShow] = useState(false)
+  const [cardnutriShow, setcardnutriShow] = useState(false)
+  const [cardcardioShow, setcardcardioShow] = useState(false)
   const [slidesView, setslidesView] = useState(1)
   const [slidesResize, setslidesResize] = useState(1)
  
@@ -109,40 +117,42 @@ const Modalidades = () => {
           </Link></SwiperSlide>
 
 
-          <SwiperSlide><Link  to={'/modalidades/musculação'}>
-          <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
+          <SwiperSlide><Link  to={'/modalidades/cardio-hit'}>
+
+
+          <styles.card onMouseEnter={() => setcardcardioShow(true)} IMG={cardioIMG}>
           
-          <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
+          <styles.cardHoverModal isVisible={cardcardioShow}></styles.cardHoverModal>
           <p>CARDIO & HIT</p>
           <span>SAIBA MAIS
              </span>
           </styles.card></Link></SwiperSlide>
 
 
-          <SwiperSlide> <Link  to={'/modalidades/musculação'}>
-          <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
+          <SwiperSlide> <Link  to={'/modalidades/artes-marciais'}>
+          <styles.card onMouseEnter={() => setcardlutaShow(true)} IMG={lutaIMG}>
           
-          <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
+          <styles.cardHoverModal isVisible={cardlutaShow}></styles.cardHoverModal>
           <p>ARTES MARCIAIS</p>
           <span>SAIBA MAIS
              </span>
           </styles.card></Link></SwiperSlide>
 
 
-          <SwiperSlide> <Link  to={'/modalidades/musculação'}>
-          <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
+          <SwiperSlide> <Link  to={'/modalidades/nutricionista'}>
+          <styles.card onMouseEnter={() => setcardnutriShow(true)} IMG={nutriIMG}>
           
-          <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
+          <styles.cardHoverModal isVisible={cardnutriShow}></styles.cardHoverModal>
           <p>NUTRICIONISTA</p>
           <span>SAIBA MAIS
              </span>
           </styles.card></Link></SwiperSlide>
 
 
-          <SwiperSlide> <Link  to={'/modalidades/musculação'}>
-          <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
+          <SwiperSlide> <Link  to={'/modalidades/funcional'}>
+          <styles.card onMouseEnter={() => setcardfuncionalShow(true)} IMG={funcionalIMG}>
           
-          <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
+          <styles.cardHoverModal isVisible={cardfuncionalShow}></styles.cardHoverModal>
           <p>FUNCIONAL</p>
           <span>SAIBA MAIS
              </span>

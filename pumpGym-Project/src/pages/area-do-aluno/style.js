@@ -214,12 +214,12 @@ export const tableAluno = styled.div`
     th{
         
         font-family: 'Teko', sans-serif;
-        font-size:2.5rem;
+        font-size:3rem;
         padding: 12px 0px;
     }
 
     th span{
-        font-size:4rem;
+        font-size:3.2rem;
     }
 
 
