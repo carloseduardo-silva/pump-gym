@@ -159,7 +159,7 @@ const Modalidade = (pageInfo) => {
           <Link to={'/modalidades/crossTraining'}>CROSS TRAINING</Link>
           <Link to={'/modalidades/danças'}>DANÇAS</Link>
           <Link to={'/modalidades/musculação'}>MUSCULAÇÃO 24H</Link>
-          <Link to={'/modalidades/nutriocionista'}>NUTRICIONISTA</Link>
+          <Link to={'/modalidades/nutricionista'}>NUTRICIONISTA</Link>
           <Link to={'/modalidades/funcional'}>FUNCIONAL</Link>
           <Link to={'/modalidades/cardio-hit'}>CARDIO & HIT</Link> 
     </styles.modalitiesAsideNav>

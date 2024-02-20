@@ -21,7 +21,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
-background-image: url('../../../public/fundoModalidades.png');
+background-image: url('./fundoModalidades.png');
 background-size: cover;
 background-repeat: no-repeat;
 box-shadow: inset 40px 80px 3rem rgba(0, 0, 0, 0.725);

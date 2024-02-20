@@ -16,13 +16,13 @@ import  Footer  from '../../components/Footer/Footer'
 
 const ModalidadesPage = () => {
 
-  const [crossTrainingIMG, setcrossTraingIMG] = useState('../../../public/crossTIMGblack.png')
-  const [workoutIMG, setworkoutIMG] = useState('../../../public/workoutIMGblack.png')
-  const [danceIMG, setdanceIMG] = useState('../../../public/danceIMGblack2.png')
-  const [fightIMG, setfightIMG] = useState('../../../public/lutaIMGblack.png')
-  const [funcionalIMG, setfuncionalIMG] = useState('../../../public/funcionalIMGblack.png')
-  const [nutriIMG, setnutriIMG] = useState('../../../public/nutriIMGblack.png')
-  const [cardioIMG, setcardioIMG] = useState('../../../public/cardioIMGblack.png')
+  const [crossTrainingIMG, setcrossTraingIMG] = useState('./crossTIMGblack.png')
+  const [workoutIMG, setworkoutIMG] = useState('./workoutIMGblack.png')
+  const [danceIMG, setdanceIMG] = useState('./danceIMGblack2.png')
+  const [fightIMG, setfightIMG] = useState('./lutaIMGblack.png')
+  const [funcionalIMG, setfuncionalIMG] = useState('./funcionalIMGblack.png')
+  const [nutriIMG, setnutriIMG] = useState('./nutriIMGblack.png')
+  const [cardioIMG, setcardioIMG] = useState('./cardioIMGblack.png')
   const [cardWorkoutShow, setcardWorkoutShow] = useState(false)
   const [cardCrossShow, setcardCrossShow] = useState(false)
   const [cardDanceShow, setcardDanceShow] = useState(false)

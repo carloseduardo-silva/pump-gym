@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 const Planos = () => {
 
-  const [contatoIMG, setcontatoIMG] = useState('../../../public/contatoContainer.png')
+  const [contatoIMG, setcontatoIMG] = useState('./contatoContainer.png')
 
   return (
 

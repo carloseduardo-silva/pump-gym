@@ -4,7 +4,7 @@ import * as styles from "./styles"
 
 const Info = () => {
     
-
+    //counting animation
     useEffect(() =>{
         const counter = document.querySelector('#counter')
 
@@ -67,7 +67,7 @@ const Info = () => {
 
             <div className='content'>
                 <h2 id='counter2'>+ 0</h2> 
-                Alunos Matriculados
+                Alunos <br /> Matriculados
             </div>
         </styles.infoCard>
 

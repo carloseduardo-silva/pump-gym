@@ -20,7 +20,7 @@ display:flex;
 flex-direction: row;
 align-items:center;
 justify-content: space-around;
-background-image: url('../../../public/fundoInfo.png');
+background-image: url('./fundoInfo.png');
 background-size: cover;
 background-repeat: no-repeat;
 background-position: bottom;
@@ -31,7 +31,7 @@ height: 62vh;
 @media(max-width: 1000px){
     flex-direction: column;
     height: auto;
-    padding: 5rem 10px;
+    padding: 5rem 0px;
     gap:6rem;
 
     .alunos{

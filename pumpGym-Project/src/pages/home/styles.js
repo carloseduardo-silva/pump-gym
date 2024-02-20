@@ -5,7 +5,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
-background-image: url('../../../public/contatoContainer.png');
+background-image: url('./contatoContainer.png');
 background-size: cover;
 background-repeat: no-repeat;
 box-shadow: inset 40px 80px 3rem rgba(0, 0, 0, 0.725);
@@ -42,6 +42,7 @@ a{
     color: white;
 }
 
+
 @media (max-width: 768px){
  p{
     font-size:14px;
@@ -49,7 +50,7 @@ a{
 
 }
 h1{
-    font-size: 30px;
+    font-size: 45px;
 }
 }
 

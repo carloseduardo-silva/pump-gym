@@ -17,7 +17,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
-background-image: url('../../../public/fundoMatricula2.png');
+background-image: url('./fundoMatricula2.png');
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
