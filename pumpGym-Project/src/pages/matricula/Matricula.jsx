@@ -168,7 +168,7 @@ const Matricula = () => {
 
         </styles.planosDesktopContainer>
 
-        <Link to={'/unidades'}> COMEÇAR AGORA </Link>
+        <Link to={'/pump-gym/unidades'}> COMEÇAR AGORA </Link>
         
      
     </styles.matriculaContainer>

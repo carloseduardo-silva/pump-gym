@@ -155,13 +155,13 @@ const Modalidade = (pageInfo) => {
 
     <styles.modalitiesAsideNav>
             <h2> + MODALIDADES</h2>
-          <Link to={'/modalidades/artes-marciais'}>ARTES MARCIAIS</Link>
-          <Link to={'/modalidades/crossTraining'}>CROSS TRAINING</Link>
-          <Link to={'/modalidades/danças'}>DANÇAS</Link>
-          <Link to={'/modalidades/musculação'}>MUSCULAÇÃO 24H</Link>
-          <Link to={'/modalidades/nutricionista'}>NUTRICIONISTA</Link>
-          <Link to={'/modalidades/funcional'}>FUNCIONAL</Link>
-          <Link to={'/modalidades/cardio-hit'}>CARDIO & HIT</Link> 
+          <Link to={'/pump-gym/modalidades/artes-marciais'}>ARTES MARCIAIS</Link>
+          <Link to={'/pump-gym/modalidades/crossTraining'}>CROSS TRAINING</Link>
+          <Link to={'/pump-gym/modalidades/danças'}>DANÇAS</Link>
+          <Link to={'/pump-gym/modalidades/musculação'}>MUSCULAÇÃO 24H</Link>
+          <Link to={'/pump-gym/modalidades/nutricionista'}>NUTRICIONISTA</Link>
+          <Link to={'/pump-gym/modalidades/funcional'}>FUNCIONAL</Link>
+          <Link to={'/pump-gym/modalidades/cardio-hit'}>CARDIO & HIT</Link> 
     </styles.modalitiesAsideNav>
 
     </styles.modalidadeContainer>

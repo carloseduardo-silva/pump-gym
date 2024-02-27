@@ -75,7 +75,7 @@ const Home = () => {
     <styles.advertisementContainer className='header'>
       <p>WELCOME TO PUMP GYM</p>
       <h1> Chegou o momento de dar um <span>PUMP</span> na sua vida.</h1>
-      <Link to={'/matricula'}> <styles.mobileTitle>Matricule-se já</styles.mobileTitle></Link>
+      <Link to={'/pump-gym/matricula'}> <styles.mobileTitle>Matricule-se já</styles.mobileTitle></Link>
       
     </styles.advertisementContainer>
     

@@ -74,7 +74,7 @@ const Nav = (active) => {
 
       
 
-      <Link to={'/'}>
+      <Link to={'/pump-gym'}>
         <styles.Logo>
           <span>P</span>  UM <span>P</span>
         </styles.Logo>
@@ -84,15 +84,15 @@ const Nav = (active) => {
       <styles.NavItens linkColor={linkColor}>
         
         
-        {unidadesActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/unidades'}> UNIDADES</Link> : <Link to={'/unidades'}>UNIDADES</Link> }
+        {unidadesActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/pump-gym/unidades'}> UNIDADES</Link> : <Link to={'/pump-gym/unidades'}>UNIDADES</Link> }
 
-        {modalidadesActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/modalidades'}>MODALIDADES</Link> : <Link to={'/modalidades'}> MODALIDADES</Link> }
+        {modalidadesActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/pump-gym/modalidades'}>MODALIDADES</Link> : <Link to={'/pump-gym/modalidades'}> MODALIDADES</Link> }
         
-        {alunoActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/aluno'}> ÂREA DO ALUNO</Link> : <Link to={'/aluno'}> ÂREA DO ALUNO</Link> }
+        {alunoActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/pump-gym/aluno'}> ÂREA DO ALUNO</Link> : <Link to={'/pump-gym/aluno'}> ÂREA DO ALUNO</Link> }
 
-        {contatoActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/contato'}> FALE CONOSCO</Link> : <Link to={'/contato'}> FALE CONOSCO</Link> }
+        {contatoActive ? <Link style={{borderBottom:'2px solid rgb(240, 10, 10)'}} to={'/pump-gym/contato'}> FALE CONOSCO</Link> : <Link to={'/pump-gym/contato'}> FALE CONOSCO</Link> }
 
-        <Link className='matricula' style={{borderBottom:'none', }} to={'/matricula'}> 
+        <Link className='matricula' style={{borderBottom:'none', }} to={'/pump-gym/matricula'}> 
         <span class="material-symbols-outlined">person_add</span> MATRICULE-SE</Link>
       </styles.NavItens>
       

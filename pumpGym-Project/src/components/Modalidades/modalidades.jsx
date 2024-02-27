@@ -87,7 +87,7 @@ const Modalidades = () => {
           modules={[Pagination]}
           className="mySwiper"
         >
-          <SwiperSlide> <Link  to={'/modalidades/musculação'}>
+          <SwiperSlide> <Link  to={'/pump-gym/modalidades/musculação'}>
           <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
           
           <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
@@ -97,7 +97,7 @@ const Modalidades = () => {
           </styles.card></Link>
           </SwiperSlide>
 
-          <SwiperSlide> <Link style={{animationDelay: '200ms'}} to={'/modalidades/crossTraining'}>
+          <SwiperSlide> <Link style={{animationDelay: '200ms'}} to={'/pump-gym/modalidades/crossTraining'}>
           <styles.card onClick={() => setcardCrossShow(true)} IMG={crossTrainingIMG}>
   
           <styles.cardHoverModal isVisible={cardCrossShow}></styles.cardHoverModal>
@@ -107,7 +107,7 @@ const Modalidades = () => {
           </styles.card>
           </Link></SwiperSlide>
 
-          <SwiperSlide><Link style={{animationDelay: '400ms'}} to={'/modalidades/danças'}>
+          <SwiperSlide><Link style={{animationDelay: '400ms'}} to={'/pump-gym/modalidades/danças'}>
           <styles.card onClick={() => setcardDanceShow(true)} IMG={danceIMG}>
           <styles.cardHoverModal isVisible={cardDanceShow}></styles.cardHoverModal>
           <p>Danças</p>
@@ -117,7 +117,7 @@ const Modalidades = () => {
           </Link></SwiperSlide>
 
 
-          <SwiperSlide><Link  to={'/modalidades/cardio-hit'}>
+          <SwiperSlide><Link  to={'/pump-gym/modalidades/cardio-hit'}>
 
 
           <styles.card onMouseEnter={() => setcardcardioShow(true)} IMG={cardioIMG}>
@@ -129,7 +129,7 @@ const Modalidades = () => {
           </styles.card></Link></SwiperSlide>
 
 
-          <SwiperSlide> <Link  to={'/modalidades/artes-marciais'}>
+          <SwiperSlide> <Link  to={'/pump-gym/modalidades/artes-marciais'}>
           <styles.card onMouseEnter={() => setcardlutaShow(true)} IMG={lutaIMG}>
           
           <styles.cardHoverModal isVisible={cardlutaShow}></styles.cardHoverModal>
@@ -139,7 +139,7 @@ const Modalidades = () => {
           </styles.card></Link></SwiperSlide>
 
 
-          <SwiperSlide> <Link  to={'/modalidades/nutricionista'}>
+          <SwiperSlide> <Link  to={'/pump-gym/modalidades/nutricionista'}>
           <styles.card onMouseEnter={() => setcardnutriShow(true)} IMG={nutriIMG}>
           
           <styles.cardHoverModal isVisible={cardnutriShow}></styles.cardHoverModal>
@@ -149,7 +149,7 @@ const Modalidades = () => {
           </styles.card></Link></SwiperSlide>
 
 
-          <SwiperSlide> <Link  to={'/modalidades/funcional'}>
+          <SwiperSlide> <Link  to={'/pump-gym/modalidades/funcional'}>
           <styles.card onMouseEnter={() => setcardfuncionalShow(true)} IMG={funcionalIMG}>
           
           <styles.cardHoverModal isVisible={cardfuncionalShow}></styles.cardHoverModal>
@@ -166,7 +166,7 @@ const Modalidades = () => {
       
         </styles.cardContainer>
 
-        <Link to={'/modalidades'}> VER MAIS +</Link>
+        <Link to={'/pump-gym/modalidades'}> VER MAIS +</Link>
       </styles.modalidadesContainer>
     </>
   )

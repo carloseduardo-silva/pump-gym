@@ -179,7 +179,7 @@ const ModalidadesPage = () => {
         <styles.cardContainer width={cardWidth} >
 
      
-           {WorkoutShow && <Link  to={'/modalidades/musculação'}>
+           {WorkoutShow && <Link  to={'/pump-gym/modalidades/musculação'}>
           <styles.card onMouseEnter={() => setcardWorkoutShow(true)} IMG={workoutIMG}>
           
           <styles.cardHoverModal isVisible={cardWorkoutShow}></styles.cardHoverModal>
@@ -189,7 +189,7 @@ const ModalidadesPage = () => {
             </styles.card></Link>}
        
 
-          {CrossShow && <Link style={{animationDelay: '200ms'}} to={'/modalidades/crossTraining'}>
+          {CrossShow && <Link style={{animationDelay: '200ms'}} to={'/pump-gym/modalidades/crossTraining'}>
           <styles.card onClick={() => setcardCrossShow(true)} IMG={crossTrainingIMG}>
   
           <styles.cardHoverModal isVisible={cardCrossShow}></styles.cardHoverModal>
@@ -199,7 +199,7 @@ const ModalidadesPage = () => {
           </styles.card>
           </Link>}
 
-          {DanceShow && <Link style={{animationDelay: '400ms'}} to={'/modalidades/danças'}>
+          {DanceShow && <Link style={{animationDelay: '400ms'}} to={'/pump-gym/modalidades/danças'}>
           <styles.card onClick={() => setcardDanceShow(true)} IMG={danceIMG}>
           <styles.cardHoverModal isVisible={cardDanceShow}></styles.cardHoverModal>
           <p>DANÇAS</p>
@@ -209,7 +209,7 @@ const ModalidadesPage = () => {
           </Link>}
 
 
-          {fightShow &&<Link style={{animationDelay: '600ms'}}  to={'/modalidades/artes-marciais'}>
+          {fightShow &&<Link style={{animationDelay: '600ms'}}  to={'/pump-gym/modalidades/artes-marciais'}>
           <styles.card onMouseEnter={() => setcardfightShow(true)} IMG={fightIMG}>
           
           <styles.cardHoverModal isVisible={cardfightShow}></styles.cardHoverModal>
@@ -219,7 +219,7 @@ const ModalidadesPage = () => {
           </styles.card></Link>}
 
 
-           {funcionalShow &&<Link style={{animationDelay: '800ms'}}  to={'/modalidades/funcional'}>
+           {funcionalShow &&<Link style={{animationDelay: '800ms'}}  to={'/pump-gym/modalidades/funcional'}>
             <styles.card style={{backgroundPosition:'top'}} onMouseEnter={() => setcardfuncionalShow(true)} IMG={funcionalIMG}>
           
             <styles.cardHoverModal isVisible={cardfuncionalShow}></styles.cardHoverModal>
@@ -230,7 +230,7 @@ const ModalidadesPage = () => {
             </Link>}
 
 
-           {nutriShow && <Link style={{animationDelay: '1000ms'}}  to={'/modalidades/nutricionista'}>
+           {nutriShow && <Link style={{animationDelay: '1000ms'}}  to={'/pump-gym/modalidades/nutricionista'}>
           <styles.card onMouseEnter={() => setcardnutriShow(true)} IMG={nutriIMG}>
           
           <styles.cardHoverModal isVisible={cardnutriShow}></styles.cardHoverModal>
@@ -240,7 +240,7 @@ const ModalidadesPage = () => {
           </styles.card></Link>}
 
 
-           {cardioShow && <Link style={{animationDelay: '1100ms'}}  to={'/modalidades/cardio-hit'}>
+           {cardioShow && <Link style={{animationDelay: '1100ms'}}  to={'/pump-gym/modalidades/cardio-hit'}>
           <styles.card onMouseEnter={() => setcardcardioShow(true)} IMG={cardioIMG}>
           
           <styles.cardHoverModal isVisible={cardcardioShow}></styles.cardHoverModal>

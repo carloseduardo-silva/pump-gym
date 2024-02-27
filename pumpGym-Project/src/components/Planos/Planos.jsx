@@ -13,7 +13,7 @@ const Planos = () => {
 
       <styles.divContainer>
       
-      <Link to={'/contato'}>
+      <Link to={'/pump-gym/contato'}>
         <styles.contatoContainer IMG={contatoIMG}>
           <h1>ENTRE EM CONTATO</h1>
           <Link to={'/contato'}>Contato</Link>
@@ -21,7 +21,7 @@ const Planos = () => {
       </Link>
 
 
-      <Link style={{animationDelay: '100ms'}} to={'/matricula'}>
+      <Link style={{animationDelay: '100ms'}} to={'/pump-gym/matricula'}>
         <styles.planosContainer >
         <h1>VEJA OS NOSSOS PLANOS</h1>
           <p> Planos a partir de apenas  R$97.00 por mês</p>
