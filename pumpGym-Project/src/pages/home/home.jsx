@@ -13,7 +13,7 @@ const Home = () => {
 
   const [navIsVisible, setnavIsVisible] = useState(null)
 
-
+  //nav exibition toggle
   useEffect(() =>{
     let header = document.querySelector('div .header');
 
@@ -37,10 +37,13 @@ const Home = () => {
     let observerHome = new IntersectionObserver((entries) => {
         
         entries.forEach(entry =>{
-          console.log()
+          
           if(entry.isIntersecting === true){
-         
-            entry.target.children[1].classList.add('show')
+     
+            entry.target.children[0].classList.add('show')
+            if(entry.target.children[1]){
+              entry.target.children[1].classList.add('show')
+            }
         }
         else{
             entry.target.classList.remove('show')
@@ -56,6 +59,13 @@ const Home = () => {
   
   })  
 
+
+  const topFunction = () => {
+    console.log('subir')
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  
+  }
 
 
   return (
@@ -74,6 +84,8 @@ const Home = () => {
     <Info/>
     <Modalidades/>
     <Planos/>
+    <styles.btnGoTop onClick={() => topFunction()}  id="myBtn" title="Go to top"> 🡅 </styles.btnGoTop>
+   
 
     <Footer/>
       

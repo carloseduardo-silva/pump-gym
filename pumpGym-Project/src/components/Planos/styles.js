@@ -5,7 +5,7 @@ const divEnter = keyframes`
 
 0%{
     opacity:0;
-    transform: translate(0%, -20%);
+    transform: translate(0%, -50%);
 
 }
 100%{
@@ -14,7 +14,7 @@ const divEnter = keyframes`
 }
 `
 
-export const divContainer = styled.div`
+export const sectionContainer = styled.section`
 display:flex;
 flex-direction: row;
 justify-content: center;
@@ -26,6 +26,34 @@ gap:3rem;
 a{
     text-decoration: none;
     animation: ${divEnter} 1s;
+    animation-delay: 800ms;
+}
+
+@media (max-width: 1070px){
+    flex-direction: column;
+    gap:3rem;
+}
+
+
+
+`
+
+
+export const divContainer = styled.div`
+display:none;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap:3rem;
+
+&.show{
+    display:flex;
+}
+
+a{
+    text-decoration: none;
+    animation: ${divEnter} 1s;
+    
 }
 
 @media (max-width: 1070px){

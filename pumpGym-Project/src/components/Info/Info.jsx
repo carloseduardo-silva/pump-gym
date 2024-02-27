@@ -13,7 +13,7 @@ const Info = () => {
             setTimeout(function(){
               counter.innerText = i;
               increment(i+1, max);
-            }, 370)
+            }, 500)
           }
 
         increment(0,8)  
@@ -28,7 +28,7 @@ const Info = () => {
             setTimeout(function(){
               counter.innerText = "+ " + i;
               increment(i+100, max);
-            }, 98)
+            }, 135)
           }
 
         increment(100,3000)  
@@ -42,8 +42,8 @@ const Info = () => {
             if(i > max) return;
             setTimeout(function(){
               counter.innerText =  "+ " + i;
-              increment(i+100, max);
-            }, 250)
+              increment(i+25, max);
+            }, 105)
           }
 
         increment(0,1000)  
@@ -51,7 +51,9 @@ const Info = () => {
     })
 
   return (
-    <styles.infoContainer>
+    <styles.infoSection>
+
+      <styles.infoContainer> 
         
         <styles.infoCard> 
             <span class="material-symbols-outlined">location_city</span>
@@ -80,8 +82,8 @@ const Info = () => {
                Especializados
             </div>
         </styles.infoCard>
-      
-    </styles.infoContainer>
+      </styles.infoContainer>
+    </styles.infoSection>
   )
 }
 

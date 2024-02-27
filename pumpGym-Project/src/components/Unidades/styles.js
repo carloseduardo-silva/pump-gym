@@ -61,6 +61,10 @@ a:hover{
     transition:250ms;
 }
 
+@media (max-width: 1100px){
+   padding: 4em 2em 8em;
+}
+
 @media (max-width: 600px){
     a{
         font-size:2rem;

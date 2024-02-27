@@ -217,7 +217,7 @@ span:hover{
 
 
     span{
-        font-size: 1.25rem;
+        font-size: 1.75rem;
         padding: 0.5rem;
     }
     
@@ -226,6 +226,11 @@ span:hover{
         border-bottom: 2px solid rgb(240, 10, 10);
         border-left: none;
         
+    }
+
+    .active{
+        border-bottom: 2px solid rgb(240, 10, 10);
+        border-left: none;
     }
 
 }

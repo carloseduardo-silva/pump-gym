@@ -231,6 +231,30 @@ export const tableAluno = styled.div`
         
     }
 
+
+    @media (max-width: 768px){
+
+        header h2{
+            font-size: 2rem;
+        }
+
+        header span{
+            font-size: 2.35rem;
+        }
+
+        th{
+            font-size: 2rem;
+        }
+
+        th span{
+            font-size: 2.2rem;
+        }
+
+        td p.hour{
+            font-size: 2.5rem;
+        }
+
+    }
    
 
 `

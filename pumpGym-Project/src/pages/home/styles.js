@@ -1,4 +1,16 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
+
+
+ const headerEnter = keyframes`
+    from{
+        opacity: 0.25;
+        transform: translateY(-95%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+`
 
 export const advertisementContainer = styled.div`
 display:flex;
@@ -16,11 +28,13 @@ font-family: 'Nunito', sans-serif;
 
 
 
+
 h1{
     color:white;
     margin:0px 1.25rem;
     font-family: 'Teko', sans-serif;
     font-size: 3.5rem;
+    animation: 1.25s ${headerEnter};
 
 
 }
@@ -31,6 +45,8 @@ p{
     margin-bottom:10px;
     letter-spacing: 5px;
     font-size: 1.5rem;
+    animation: 1.25s ${headerEnter};
+    
 }
 
 span{
@@ -91,4 +107,25 @@ export const mobileTitle = styled.h3`
         display:flex;
         opacity:1;
     }
+`
+export const btnGoTop = styled.button`
+    display:block;
+    position: fixed; 
+    bottom: 20px;
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgb(0, 0, 0, 0.5); 
+    color: white; 
+    cursor: pointer; 
+    padding: 5px 16px 10px; 
+    border-radius: 10px;
+    font-size: 30px; 
+  
+  
+  &:hover {
+    background-color: rgb(0, 0, 0, 0.85); 
+  }
+
 `

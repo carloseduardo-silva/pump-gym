@@ -71,8 +71,6 @@ a:hover{
 
 `
 
-
-
 export const cardContainer = styled.div`
 display:none;
 flex-direction:row;

@@ -15,7 +15,7 @@ const infoCardEnter = keyframes`
 `
 
 
-export const infoContainer = styled.section`
+export const infoSection = styled.section`
 display:flex;
 flex-direction: row;
 align-items:center;
@@ -27,6 +27,28 @@ background-position: bottom;
 box-shadow: inset 40px 80px 3rem rgba(0, 0, 0, 0.725);
 width: 100%;
 height: 62vh;
+
+@media(max-width: 1000px){
+    flex-direction: column;
+    height: auto;
+    padding: 5rem 0px;
+    gap:6rem;
+
+
+}
+
+
+
+
+`
+
+export const infoContainer = styled.div`
+display:flex;
+flex-direction: row;
+align-items:center;
+justify-content: space-around;
+width: 100%;
+
 
 @media(max-width: 1000px){
     flex-direction: column;

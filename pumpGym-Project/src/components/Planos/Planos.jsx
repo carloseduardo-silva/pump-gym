@@ -9,7 +9,9 @@ const Planos = () => {
 
   return (
 
-    <styles.divContainer>
+    <styles.sectionContainer>
+
+      <styles.divContainer>
       
       <Link to={'/contato'}>
         <styles.contatoContainer IMG={contatoIMG}>
@@ -19,16 +21,16 @@ const Planos = () => {
       </Link>
 
 
-      <Link style={{animationDelay: '200ms'}} to={'/matricula'}>
+      <Link style={{animationDelay: '100ms'}} to={'/matricula'}>
         <styles.planosContainer >
         <h1>VEJA OS NOSSOS PLANOS</h1>
           <p> Planos a partir de apenas  R$97.00 por mês</p>
         </styles.planosContainer>
       </Link>
 
-      
+      </styles.divContainer>
 
-    </styles.divContainer>
+    </styles.sectionContainer>
   )
 }
 
