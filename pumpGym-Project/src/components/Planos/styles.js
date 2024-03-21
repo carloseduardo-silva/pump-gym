@@ -52,13 +52,19 @@ gap:3rem;
 
 a{
     text-decoration: none;
-    animation: ${divEnter} 1s;
+    
     
 }
 
 @media (max-width: 1070px){
     flex-direction: column;
     gap:3rem;
+}
+
+@media (min-width: 768px){
+    a{
+        animation: ${divEnter} 1s;
+    }
 }
 
 

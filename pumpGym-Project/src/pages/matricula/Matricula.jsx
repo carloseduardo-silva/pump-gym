@@ -21,7 +21,7 @@ const Matricula = () => {
     <>
     <Nav ></Nav>
     
-    <styles.matriculaHeader> <h1> CONHEÇA OS NOSSOS PLANOS </h1></styles.matriculaHeader>
+    <styles.matriculaHeader> <h1> NOSSOS PLANOS </h1></styles.matriculaHeader>
 
     <styles.matriculaContainer>  
       <header>

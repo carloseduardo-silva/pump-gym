@@ -51,7 +51,7 @@ h1:hover{
 
 @media (max-width:700px){
     h1{
-        font-size:2.25rem;
+        font-size:3.2rem;
         padding: 1rem 2rem;
     }
 }
@@ -59,8 +59,8 @@ h1:hover{
 @media (max-width:530px){
     h1{
         text-align: center;
-        font-size:1.75rem;
-        padding: 1rem;
+        font-size:2.75rem;
+        padding: 1rem 1.5rem;
     }
 }
 
@@ -70,7 +70,7 @@ export const matriculaContainer = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
-    padding: 5rem 2rem 9rem 2rem;
+    padding: 3.75rem 2rem 9rem 2rem;
     flex-direction: column;
     background-color: #F9f6EE;
 

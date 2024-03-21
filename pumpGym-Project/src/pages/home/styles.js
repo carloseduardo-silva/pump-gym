@@ -34,7 +34,7 @@ h1{
     margin:0px 1.25rem;
     font-family: 'Teko', sans-serif;
     font-size: 3.5rem;
-    animation: 1.25s ${headerEnter};
+    
 
 
 }
@@ -45,7 +45,7 @@ p{
     margin-bottom:10px;
     letter-spacing: 5px;
     font-size: 1.5rem;
-    animation: 1.25s ${headerEnter};
+    
     
 }
 
@@ -58,6 +58,18 @@ a{
     color: white;
 }
 
+
+@media (min-width: 768px){
+    p{
+        animation: 1.25s ${headerEnter};
+       
+   
+   }
+   h1{
+        animation: 1.25s ${headerEnter};
+   }
+   }
+   
 
 @media (max-width: 768px){
  p{
@@ -119,13 +131,18 @@ export const btnGoTop = styled.button`
     background-color: rgb(0, 0, 0, 0.5); 
     color: white; 
     cursor: pointer; 
-    padding: 5px 16px 10px; 
+    padding: 5px 14px 5px; 
     border-radius: 10px;
-    font-size: 30px; 
+   
   
   
   &:hover {
     background-color: rgb(0, 0, 0, 0.85); 
+  }
+
+  span{
+    font-size:2.35rem;
+    font-weight:bolder;
   }
 
 `

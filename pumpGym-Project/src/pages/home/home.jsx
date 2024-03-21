@@ -84,7 +84,8 @@ const Home = () => {
     <Info/>
     <Modalidades/>
     <Planos/>
-    <styles.btnGoTop onClick={() => topFunction()}  id="myBtn" title="Go to top"> 🡅 </styles.btnGoTop>
+    <styles.btnGoTop onClick={() => topFunction()}  id="myBtn" title="Go to Top"> 
+    <span class="material-symbols-outlined">arrow_upward</span>  </styles.btnGoTop>
    
 
     <Footer/>

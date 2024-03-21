@@ -88,7 +88,7 @@ a{
     padding:2px;
     border-radius:5px;
     width:auto;
-    animation: ${divEnter} 1s;
+
    
 }
 
@@ -98,7 +98,11 @@ a:hover{
 
 }
 
-
+@media (min-width:768px){
+    a{
+        animation: ${divEnter} 1s;
+    }
+}
 
 @media (max-width:1000px){
     gap:2rem;
@@ -145,7 +149,7 @@ span{
     opacity:0;
     margin: 1rem 1.6rem 3rem 1.6rem;
     color: white;
-    animation: ${Show} 700ms;
+   
     font-weight:bolder;
     font-size: 1.25rem;
 
@@ -154,7 +158,6 @@ span{
 
 
 &:hover{
-
     cursor:pointer;
 
    p{
@@ -167,6 +170,12 @@ span{
     display:flex;
     opacity:1;
    }
+}
+
+@media (min-width:768px){
+    span{
+        animation: ${Show} 700ms;
+    }
 }
 
 @media (max-width:1150px){
